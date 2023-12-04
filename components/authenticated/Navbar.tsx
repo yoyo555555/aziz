@@ -82,7 +82,7 @@ const Navbar = () => {
 
         `}
         >
-          Envoyer de l'argent {/* <FaPaperPlane /> */}
+          Envoyer de l&argent {/* <FaPaperPlane /> */}
         </div>
 
         <div

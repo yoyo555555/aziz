@@ -108,7 +108,7 @@ const Page = () => {
 
         <div className="flex items-center gap-4 flex-col sm:flex-row">
           <div className="w-full">
-            <div>Nom D'utulisateur</div>
+            <div>Nom D&utulisateur</div>
             <TextInput
               disabled
               value={input.username}

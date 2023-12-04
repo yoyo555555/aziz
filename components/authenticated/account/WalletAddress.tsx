@@ -127,7 +127,7 @@ const WalletAddress = () => {
 
       <Accordion.Panel>
         <div className={`${mode == "light" ? "text-slate-700" : "text-white"}`}>
-        Remarque : Il s'agit de votre adresse personnelle, toute transaction envoyée à celles-ci
+        Remarque : Il s&agit de votre adresse personnelle, toute transaction envoyée à celles-ci
            les portefeuilles seront ajoutés au solde de votre compte.
         </div>
 

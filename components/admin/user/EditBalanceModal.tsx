@@ -76,7 +76,7 @@ const EditBalanceModal = (props: EditBalanceModalProps) => {
           />
 
           <label htmlFor="solde du portefeuille d'investissement">
-          Solde d'investissement retirable          </label>
+          Solde d&investissement retirable          </label>
           <TextInput
             id="invest-balance"
             value={input.investWithdrawableBalance}

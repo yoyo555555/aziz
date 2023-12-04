@@ -48,7 +48,7 @@ const WithdrawModal = (props: WithdrawModalProps) => {
       <div className="flex flex-col gap-3">
         <div>
         Le montant pouvant être retiré est de {currency}
-          {formatNumber(user.investWithdrawableBalance)} <br /> Remarque : L'argent sera ajouté au solde de votre compte. 
+          {formatNumber(user.investWithdrawableBalance)} <br /> Remarque : L&argent sera ajouté au solde de votre compte. 
         </div>
 
         <TextInput

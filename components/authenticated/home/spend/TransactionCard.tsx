@@ -25,7 +25,7 @@ interface TransactionCardProps {
   category:
     | "money-received"
     | "transfer"
-    | "depot"
+    | "deposit"
     | "loan"
     | "investment-topup"
     | "investment-withdrawal";

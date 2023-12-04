@@ -139,7 +139,7 @@ const Account = ({ user }: { user: userSchemaType }) => {
               )}
 
               <div className="flex items-center gap-1">
-              Modifier l'image <FaEdit />
+              Modifier l&image <FaEdit />
               </div>
             </div>
           )}

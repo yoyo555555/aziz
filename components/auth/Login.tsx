@@ -110,7 +110,7 @@ Se connecter        </div>
           className={`font-semibold 
         ${mode === "light" ? "text-gray-500" : "text-white"}`}
         >
-        Vous n'avez pas de compte?  
+        Vous n&avez pas de compte?  
         </div>
 
         <Button

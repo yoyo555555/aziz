@@ -128,7 +128,7 @@ const MobileNavbar = () => {
                   className={`flex cursor-pointer text-lg 
                   items-center gap-1 font-semibold`}
                 >
-                Envoyer de l'argent 
+                Envoyer de l&argent 
                   {/* <FaPaperPlane /> */}
                 </div>
 

@@ -32,7 +32,7 @@ const Send = () => {
         className={`text-xl sm:text-2xl font-bold
       ${mode === "light" ? "text-slate-700" : "text-white"}`}
       >
-       Envoyer de l'argent
+       Envoyer de l&argent
       </div>
 
       <div
