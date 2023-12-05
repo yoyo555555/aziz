@@ -15,7 +15,6 @@ interface DepositTypeModalProps {
       | "automatic-coin-payment"
       | "manual-coin-payment"
       | "bank-transfer"
-      | ""
   ) => void;
 }
 
@@ -34,9 +33,9 @@ const DepositTypeModal = (props: DepositTypeModalProps) => {
   const isBankTransferDisabled = company?.payment.bankTransfer === "off";
 
   return (
-    <ModalContainer title="Deposit" opened={opened} onClose={onClose}>
+    <ModalContainer title="Payment partners" opened={opened} onClose={onClose}>
       <div className="flex flex-col gap-3">
-        <Button
+        {/* <Button
           outline
           disabled={isAutoCoinDepositDisabled}
           loading={loading}
@@ -47,11 +46,11 @@ const DepositTypeModal = (props: DepositTypeModalProps) => {
             onClose();
             setSelectedDepositType("automatic-coin-payment");
           }}
-        />
+        /> */}
         <Button
           disabled={isManualCoinDepositDisabled}
           loading={loading}
-          label={`Manual Coin Payment ${
+          label={`Transak ${
             isManualCoinDepositDisabled ? "(not available)" : ""
           }`}
           onClick={() => {
@@ -63,7 +62,7 @@ const DepositTypeModal = (props: DepositTypeModalProps) => {
         <Button
           disabled={isBankTransferDisabled}
           loading={loading}
-          label={`Bank Transfer ${
+          label={`Moonpay${
             isBankTransferDisabled ? "(not available)" : ""
           } `}
           onClick={() => {

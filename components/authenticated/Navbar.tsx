@@ -8,6 +8,8 @@ import useMobileNavbar from "../hooks/useMobileNavbar";
 import useTheme from "../hooks/useTheme";
 import ThemeToggle from "../ThemeToggle";
 import useCompany from "../hooks/useCompany";
+import { FaInfo } from "react-icons/fa";
+
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -24,6 +26,7 @@ const Navbar = () => {
   const [moneyHover, setMoneyHover] = useState(false);
   const [cardHover, setCardHover] = useState(false);
   const [accountHover, setAccountHover] = useState(false);
+  const [aboutHover, setAboutHover] = useState(false);
 
   const getColor = (condition: boolean, hoverState: boolean) => {
     if (condition) {
@@ -99,6 +102,23 @@ const Navbar = () => {
           Cards
           <FaCreditCard />
         </div>
+
+
+        <div
+          onMouseEnter={() => setAboutHover(true)}
+          onMouseLeave={() => setAboutHover(false)}
+          style={{
+            color: getColor(pathName.startsWith("/about"), aboutHover),
+          }}
+          onClick={() => router.push("/about")}
+          className={`flex cursor-pointer 
+        text-lg items-center gap-1 font-semibold`}
+        >
+          About
+          <FaInfo /> 
+        </div>
+
+
       </div>
 
       <div className="flex items-center gap-3">

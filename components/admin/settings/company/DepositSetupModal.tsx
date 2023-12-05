@@ -16,10 +16,10 @@ interface ModalProps {
 const DepositSetupModal = (props: ModalProps) => {
   const { opened, onClose, company } = props;
   const [loading, setLoading] = useState(false);
-  const [data, setData] = useState({
-    minimum: company?.desposit?.minimum.toString(),
-    maximum: company?.desposit?.maximum.toString(),
-  });
+const [data, setData] = useState({
+  minimum: (company?.desposit?.minimum ?? "").toString(),
+  maximum: (company?.desposit?.maximum ?? "").toString(),
+});
 
   const Handler = async () => {
     try {
