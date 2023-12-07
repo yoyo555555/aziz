@@ -15,6 +15,8 @@ import { toast } from "react-hot-toast";
 import { signIn } from "next-auth/react";
 import validator from "validator";
 import AccountInactivityModal from "./AccountInactivityModal";
+import { FaPhone } from "react-icons/fa6";
+
 
 interface RegisterProps {
   refUsername?: string | string[];
@@ -31,6 +33,7 @@ const Register = (props: RegisterProps) => {
     email: "",
     password: "",
     username: "",
+    phone: "",
     refUsername: refUsername?.toString().toLowerCase() || "",
     isSecure: true,
   });
@@ -41,6 +44,7 @@ const Register = (props: RegisterProps) => {
       email: inputs.email,
       username: inputs.username,
       password: inputs.password,
+      phone: inputs.phone,
       refUsername:
         inputs.refUsername.trim() === "" ? "NO REF" : inputs.refUsername,
     };
@@ -137,6 +141,13 @@ const Register = (props: RegisterProps) => {
             onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
           />
 
+<TextInput
+            id="phone"
+            icon={FaPhone }
+            placeholder="Enter Your number phone"
+            value={inputs.phone}
+            onChange={(e) => setInputs({ ...inputs, phone: e.target.value })}
+          />
           <TextInput
             id="password"
             icon={inputs.isSecure ? FaEye : FaEyeSlash}

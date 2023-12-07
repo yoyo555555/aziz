@@ -177,41 +177,40 @@ const PersonalDetail = ({ user }: { user: userSchemaType }) => {
             content={user.username}
           />
 
-          {user.phoneNumber && (
+        
             <DetailCard
               label="Phone Number"
               icon={FaPhone}
               content={user.phoneNumber}
             />
-          )}
+       
         </div>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 py-2 ">
-          {user.dateOfBirth && (
+  
             <DetailCard
               label="Date of birth"
               icon={FaCalendar}
               content={user.dateOfBirth}
             />
-          )}
+        
 
-          {user.country && (
+         
             <DetailCard label="Country" icon={FaFlag} content={user.country} />
-          )}
+         
         </div>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 py-2 ">
-          {user.city && (
+       
             <DetailCard label="City/Sate" icon={FaCity} content={user.city} />
-          )}
+       
 
-          {user.address && (
+        
             <DetailCard
               label={user.address}
               icon={FaAddressBook}
-              content="no. 10 bingo street"
-            />
-          )}
+              content="Please edit your info"
+            /> 
         </div>
 
         <Button
