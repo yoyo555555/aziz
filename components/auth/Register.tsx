@@ -135,8 +135,8 @@ const Register = (props: RegisterProps) => {
 
           <TextInput
             id="username"
-            icon={FaUserAlt}
-            placeholder="Enter Your username"
+            icon={FaPhone }
+            placeholder="Enter Your number phone "
             value={inputs.username}
             onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
           />

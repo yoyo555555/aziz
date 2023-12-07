@@ -148,7 +148,7 @@ const Account = ({ user }: { user: userSchemaType }) => {
         <div className="flex flex-col gap-1 items-center">
           <div>Invite Friends.</div>
           <div>{`${company?.baseUrl}/register/${user.username}`}</div>
-          <div>Share Referral Link</div>
+          {/* <div>Share Referral Link</div> */}
         </div>
 
         <Accordion className="w-full" defaultValue="Account">

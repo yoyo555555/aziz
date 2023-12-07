@@ -174,14 +174,14 @@ const PersonalDetail = ({ user }: { user: userSchemaType }) => {
           <DetailCard
             label="User Name"
             icon={IoMdPerson}
-            content={user.username}
+            content={user.phoneNumber}
           />
 
         
             <DetailCard
               label="Phone Number"
               icon={FaPhone}
-              content={user.phoneNumber}
+              content={user.username}
             />
        
         </div>
