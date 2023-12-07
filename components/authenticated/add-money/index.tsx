@@ -6,7 +6,7 @@ import useTheme from "@/components/hooks/useTheme";
 import axios from "axios";
 import React, { useCallback, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
-import { FaDollarSign } from "react-icons/fa";
+import { FaEuroSign  } from "react-icons/fa";
 import { useSession } from "next-auth/react";
 import { Loader } from "@mantine/core";
 import DepositTypeModal from "./DepositTypeModal";
@@ -105,7 +105,7 @@ const AddMoney = () => {
                 setAmountInput(e.target.value);
               }}
               placeholder="Enter the amount you want to deposit"
-              icon={FaDollarSign}
+              icon={FaEuroSign }
             />
 
             {!loadingTransaction && (
