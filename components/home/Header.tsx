@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import useCompany from "../hooks/useCompany";
 
+
 const Header = () => {
   const { company } = useCompany();
 
@@ -53,24 +54,23 @@ const Header = () => {
 
         <div className="flex gap-5 w-full justify-center">
           <div className="max-w-[250px] max-h-[500px] w-full">
-            <Image
-              priority
-              src={"/spend.png"}
-              alt={"desktop"}
-              layout="responsive"
-              width={150}
-              height={200}
-            />
+             <img
+            
+              src={"/spend1.png"}
+             
+            /> 
+      
+          
           </div>
 
           <div className="max-w-[250px] max-h-[500px] w-full translate-y-10">
             <Image
               priority
-              src={"/invest.png"}
+              src={"/invest1.png"}
               alt={"desktop"}
               layout="responsive"
-              width={150}
-              height={150}
+              width={250}
+              height={250}
             />
           </div>
         </div>
