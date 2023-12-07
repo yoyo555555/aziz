@@ -126,7 +126,7 @@ const Card = () => {
                   className={`font-semibold text-sm 
               ${mode === "light" ? "text-gray-500" : "text-gray-300"}`}
                 >
-                  Withdraw funds directly to your bank
+                  
                 </div>
               </div>
             </div>
