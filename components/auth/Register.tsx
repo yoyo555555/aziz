@@ -141,13 +141,6 @@ const Register = (props: RegisterProps) => {
             onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
           />
 
-<TextInput
-            id="phone"
-            icon={FaPhone }
-            placeholder="Enter Your number phone"
-            value={inputs.phone}
-            onChange={(e) => setInputs({ ...inputs, phone: e.target.value })}
-          />
           <TextInput
             id="password"
             icon={inputs.isSecure ? FaEye : FaEyeSlash}
