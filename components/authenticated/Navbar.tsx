@@ -98,8 +98,8 @@ const Navbar = () => {
           Contact
           {/* <FaCreditCard /> */}
         </div>
-        <div className="sm:flex items-center gap-10 hidden">
-          <div
+        {/* <div className="sm:flex items-center gap-10 hidden"> */}
+          {/* <div
             onMouseEnter={() => setHomeHover(true)}
             onMouseLeave={() => setHomeHover(false)}
             style={{
@@ -111,8 +111,8 @@ const Navbar = () => {
           >
             A propos
             {/* <FaHome /> */}
-          </div>{" "}
-        </div>
+          {/* </div>{" "} */}
+        {/* </div> */} 
       </div>
 
       <div className="flex items-center gap-3">

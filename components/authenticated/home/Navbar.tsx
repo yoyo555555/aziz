@@ -65,7 +65,7 @@ Aperçu </div>
         className={`cursor-pointer text-base sm:text-lg 
          select-none font-semibold`}
       >
-      Investissez et gagnez
+      Gere votre pool wallet
       </div>
 
       {company?.loan.status === "on" && (
