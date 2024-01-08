@@ -13,11 +13,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
-<<<<<<< HEAD
     "@mantine/core": "^6.0.21",
-=======
-    "@mantine/core": "^6.0.17",
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
     "@mantine/dates": "^6.0.17",
     "@mantine/hooks": "^6.0.17",
     "@mantine/modals": "^6.0.17",
@@ -38,15 +34,10 @@
     "@vercel/analytics": "^1.0.1",
     "animate.css": "^4.1.1",
     "autoprefixer": "10.4.14",
-<<<<<<< HEAD
     "axios": "^1.6.2",
     "bcrypt": "^5.1.1",
     "bootstrap": "^5.3.2",
     "cloudinary": "^1.41.0",
-=======
-    "axios": "^1.4.0",
-    "bcrypt": "^5.1.0",
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
     "dayjs": "^1.11.9",
     "dotenv": "^16.3.1",
     "eslint": "8.45.0",
@@ -54,59 +45,38 @@
     "express": "^4.18.2",
     "lottie-react": "^2.4.0",
     "mjml-browser": "^4.14.1",
-<<<<<<< HEAD
     "mongodb": "^5.9.1",
     "mongoose": "^7.5.0",
     "next": "^13.5.6",
     "next-auth": "^4.24.5",
-=======
-    "mongodb": "^5.7.0",
-    "mongoose": "^7.5.0",
-    "next": "13.4.10",
-    "next-auth": "^4.22.3",
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
     "next-cloudinary": "^4.16.2",
     "node-cron": "^3.0.2",
     "nodemailer": "^6.9.4",
     "postcss": "8.4.26",
     "react": "18.2.0",
-<<<<<<< HEAD
     "react-bootstrap": "^2.9.1",
-=======
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
     "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
     "react-email": "^1.9.4",
     "react-hot-toast": "^2.4.1",
-<<<<<<< HEAD
     "react-icons": "^4.12.0",
-=======
-    "react-icons": "^4.10.1",
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
     "react-qr-code": "^2.0.12",
     "react-spinners": "^0.13.8",
     "react-visibility-sensor": "^5.1.1",
     "react-youtube": "^10.1.0",
     "resend": "^0.17.2",
-<<<<<<< HEAD
     "tailwind": "^4.0.0",
     "tailwindcss": "^3.3.5",
-=======
-    "tailwindcss": "3.3.3",
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
     "typescript": "5.1.6",
     "validator": "^13.11.0",
     "winston": "^3.10.0",
     "zustand": "^4.3.9"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@types/axios": "^0.14.0",
     "@types/next": "^9.0.0",
     "@types/next-auth": "^3.15.0",
     "@types/react-icons": "^3.0.0",
-=======
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
     "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5"
   }

@@ -8,11 +8,6 @@ import useMobileNavbar from "../hooks/useMobileNavbar";
 import useTheme from "../hooks/useTheme";
 import ThemeToggle from "../ThemeToggle";
 import useCompany from "../hooks/useCompany";
-<<<<<<< HEAD
-=======
-import { FaInfo } from "react-icons/fa";
-
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -29,10 +24,6 @@ const Navbar = () => {
   const [moneyHover, setMoneyHover] = useState(false);
   const [cardHover, setCardHover] = useState(false);
   const [accountHover, setAccountHover] = useState(false);
-<<<<<<< HEAD
-=======
-  const [aboutHover, setAboutHover] = useState(false);
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
   const getColor = (condition: boolean, hoverState: boolean) => {
     if (condition) {
@@ -75,13 +66,8 @@ const Navbar = () => {
           className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
         >
-<<<<<<< HEAD
           Acceuil
           {/* <FaHome /> */}
-=======
-          Home
-          <FaHome />
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <div
@@ -96,12 +82,7 @@ const Navbar = () => {
 
         `}
         >
-<<<<<<< HEAD
           Envoyer de l&argent {/* <FaPaperPlane /> */}
-=======
-          Send Money
-          <FaPaperPlane />
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <div
@@ -114,7 +95,6 @@ const Navbar = () => {
           className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
         >
-<<<<<<< HEAD
           Contact
           {/* <FaCreditCard /> */}
         </div>
@@ -133,28 +113,6 @@ const Navbar = () => {
             {/* <FaHome /> */}
           {/* </div>{" "} */}
         {/* </div> */} 
-=======
-          Cards
-          <FaCreditCard />
-        </div>
-
-
-        <div
-          onMouseEnter={() => setAboutHover(true)}
-          onMouseLeave={() => setAboutHover(false)}
-          style={{
-            color: getColor(pathName.startsWith("/about"), aboutHover),
-          }}
-          onClick={() => router.push("/about")}
-          className={`flex cursor-pointer 
-        text-lg items-center gap-1 font-semibold`}
-        >
-          About
-          <FaInfo /> 
-        </div>
-
-
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       </div>
 
       <div className="flex items-center gap-3">
@@ -170,11 +128,7 @@ const Navbar = () => {
           className={`flex cursor-pointer
         text-lg items-center gap-1 font-semibold`}
         >
-<<<<<<< HEAD
           <span className="hidden sm:block">Compte</span>
-=======
-          <span className="hidden sm:block">Account</span>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           <IoMdPerson size={22} />
         </div>
 
