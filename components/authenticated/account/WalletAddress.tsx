@@ -48,13 +48,8 @@ export const WalletCard = (props: WalletCardProps) => {
             {logo && (
               <Image
                 className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]"
-<<<<<<< HEAD
-                width={19105}
-                height={50}
-=======
                 width={40}
                 height={40}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 alt="logo"
                 src={logo}
               />
@@ -132,13 +127,8 @@ const WalletAddress = () => {
 
       <Accordion.Panel>
         <div className={`${mode == "light" ? "text-slate-700" : "text-white"}`}>
-<<<<<<< HEAD
-        Remarque : Il s&agit de votre adresse personnelle, toute transaction envoyée à celles-ci
-           les portefeuilles seront ajoutés au solde de votre compte.
-=======
           Note: These are your personal address, any transaction sent to these
           wallets will be added to your account balance.
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <div className="flex flex-col gap-5 py-2">

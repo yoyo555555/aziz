@@ -82,11 +82,7 @@ const LoanModal = (props: TopUpModalProps) => {
   };
 
   return (
-<<<<<<< HEAD
-    <ModalContainer title="Demande de prêt" opened={opened} onClose={onClose}>
-=======
     <ModalContainer title="Get a loan" opened={opened} onClose={onClose}>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       <div className="h-fit min-h-[450px] flex flex-col justify-between">
         <div className="flex flex-col gap-5">
           <TextInput
