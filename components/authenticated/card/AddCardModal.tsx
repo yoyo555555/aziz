@@ -123,7 +123,11 @@ const AddCardModal = (props: TopUpModalProps) => {
             <TextInput
               value={input.country}
               onChange={(e) => setInput({ ...input, country: e.target.value })}
+<<<<<<< HEAD
               placeholder="Entrez votre pays"
+=======
+              placeholder="Enter your country"
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             />
           </div>
 

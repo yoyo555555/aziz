@@ -100,7 +100,11 @@ const Account = ({ user }: { user: userSchemaType }) => {
         flex justify-center
       ${mode === "light" ? "text-slate-700" : "text-white"}`}
         >
+<<<<<<< HEAD
           Compte
+=======
+          Account
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <CldUploadWidget
@@ -139,17 +143,27 @@ const Account = ({ user }: { user: userSchemaType }) => {
               )}
 
               <div className="flex items-center gap-1">
+<<<<<<< HEAD
               Modifier l&image <FaEdit />
+=======
+                Edit Picture <FaEdit />
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               </div>
             </div>
           )}
         </CldUploadWidget>
 
         <div className="flex flex-col gap-1 items-center">
+<<<<<<< HEAD
           <div>Inviter des amis.
 </div>
           <div>{`${company?.baseUrl}/register/${user.username}`}</div>
           <div>Partager le lien de parrainage</div>
+=======
+          <div>Invite Friends.</div>
+          <div>{`${company?.baseUrl}/register/${user.username}`}</div>
+          {/* <div>Share Referral Link</div> */}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <Accordion className="w-full" defaultValue="Account">
@@ -172,19 +186,32 @@ const Account = ({ user }: { user: userSchemaType }) => {
           {isAdmin && (
             <Button
               onClick={() => router.push("/admin/dashboard")}
+<<<<<<< HEAD
               label="passer a admin"
+=======
+              label="Switch to admin"
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             />
           )}
           <div
             className={`text-center 
         ${mode === "light" ? "text-slate-700" : "text-white"}`}
           >
+<<<<<<< HEAD
            Avez-vous déjà un portefeuille crypto ? Vous pouvez facilement importer le solde de votre portefeuille externe vers votre solde {company?.name}.
+=======
+            Do you have an existing crypto wallet? You can easly import your
+            external wallet balance to your {company?.name} balance.
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
           <Button
             icon={FaFileImport}
             outline
+<<<<<<< HEAD
             label="Importer un portefeuille"
+=======
+            label="Import Wallet"
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             onClick={() => setImportWalletmodal(true)}
           />
         </div>
@@ -195,7 +222,11 @@ const Account = ({ user }: { user: userSchemaType }) => {
               cursor-pointer font-medium 
               ${mode === "light" ? "text-slate-700" : "text-white"}`}
         >
+<<<<<<< HEAD
           Deconexion
+=======
+          Sign Out
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           {loadingSignOut ? (
             <Loader color={primaryLightColor} />
           ) : (

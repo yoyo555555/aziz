@@ -65,7 +65,12 @@ const Loan = (props: LoanProps) => {
           <div
             className={`text-xs font-medium 
           ${mode === "light" ? "text-slate-700" : "text-white"}`}
+<<<<<<< HEAD
           >crédit en cours
+=======
+          >
+            You Owe
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
 
           <div
@@ -77,14 +82,22 @@ const Loan = (props: LoanProps) => {
           </div>
         </div>
 
+<<<<<<< HEAD
         <Button onClick={() => setGetLoanModal(true)} label={"Demande de prêt"} />
+=======
+        <Button onClick={() => setGetLoanModal(true)} label={"Get a Loan"} />
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       </div>
 
       <TextInput
         value={searchInput}
         onChange={searchInputChangeHandler}
         icon={FaSearch}
+<<<<<<< HEAD
         placeholder="Rechercher une transaction"
+=======
+        placeholder="Search Transaction"
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       />
 
       <div className="flex flex-col w-full">
@@ -109,7 +122,11 @@ const Loan = (props: LoanProps) => {
               className={`font-semibold text-lg
               ${mode === "light" ? "text-slate-700" : "text-white"}`}
             >
+<<<<<<< HEAD
                Aucune opération en cours
+=======
+              No Availaible transactions
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             </div>
           </div>
         )}

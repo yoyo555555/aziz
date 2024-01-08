@@ -128,8 +128,13 @@ const MobileNavbar = () => {
                   className={`flex cursor-pointer text-lg 
                   items-center gap-1 font-semibold`}
                 >
+<<<<<<< HEAD
                 Envoyer de l&argent 
                   {/* <FaPaperPlane /> */}
+=======
+                  Send Money
+                  <FaPaperPlane />
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 </div>
 
                 <div
@@ -142,8 +147,13 @@ const MobileNavbar = () => {
                   className={`flex cursor-pointer text-lg items-center 
                   gap-1 font-semibold`}
                 >
+<<<<<<< HEAD
                   Contact
                   {/* <FaCreditCard /> */}
+=======
+                  Cards
+                  <FaCreditCard />
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 </div>
               </div>
 
@@ -153,7 +163,11 @@ const MobileNavbar = () => {
               cursor-pointer font-medium 
               ${mode === "light" ? "text-slate-700" : "text-white"}`}
               >
+<<<<<<< HEAD
                 Deconnexion
+=======
+                Sign Out
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 {loadingSignOut ? (
                   <Loader color={primaryLightColor} />
                 ) : (

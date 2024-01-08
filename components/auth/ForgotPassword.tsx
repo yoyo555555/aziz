@@ -63,7 +63,11 @@ const ForgotPassword = () => {
       <div className="flex flex-col gap-4 w-full">
         <TextInput
           id="email"
+<<<<<<< HEAD
           placeholder="Entrer votre Email"
+=======
+          placeholder="Enter Your Email"
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           value={emailInput}
           icon={AiFillMail}
           onChange={(e) => {

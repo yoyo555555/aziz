@@ -40,7 +40,11 @@ const Page = () => {
         mode === "light" ? "text-slate-700" : "text-white"
       } flex gap-3 flex-col`}
     >
+<<<<<<< HEAD
       <div>choisir un plan</div>
+=======
+      <div>Choose a Plan</div>
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
       <div className={`flex flex-wrap justify-center sm:justify-start gap-y-5`}>
         {!loading &&

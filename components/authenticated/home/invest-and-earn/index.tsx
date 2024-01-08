@@ -54,7 +54,11 @@ const Save = (props: SaveProps) => {
     >
       <div className="flex flex-col sm:flex-row items-center gap-1 w-full justify-between px-3">
         <div className="flex flex-col gap-1 w-full sm:items-center">
+<<<<<<< HEAD
           <div className={`text-xs font-medium`}>solde des placements</div>
+=======
+          <div className={`text-xs font-medium`}>Investment Balance</div>
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
           <div
             className={`font-bold text-3xl sm:text-4xl  
@@ -66,7 +70,11 @@ const Save = (props: SaveProps) => {
         </div>
 
         <div className="flex flex-col gap-1 w-full sm:items-center">
+<<<<<<< HEAD
           <div className={`text-xs font-medium`}>Solde des bénéfices</div>
+=======
+          <div className={`text-xs font-medium`}>Profit Balance</div>
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
           <div
             className={`font-bold text-3xl sm:text-4xl 
@@ -78,7 +86,11 @@ const Save = (props: SaveProps) => {
         </div>
 
         <div className="flex flex-col gap-1 w-full sm:items-center">
+<<<<<<< HEAD
           <div className={`text-xs font-medium`}>Solde à retirer</div>
+=======
+          <div className={`text-xs font-medium`}>Withdrawable Balance</div>
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
           <div
             className={`font-bold text-3xl sm:text-4xl 
@@ -91,11 +103,19 @@ const Save = (props: SaveProps) => {
       </div>
 
       <div className="flex gap-2">
+<<<<<<< HEAD
         <Button onClick={() => setWithdrawModal(true)} label={"Retrait"} />
         <Button
           outline
           onClick={() => router.push("/home/invest-and-earn/create")}
           label={"nouveaux investissements"}
+=======
+        <Button onClick={() => setWithdrawModal(true)} label={"Withdraw"} />
+        <Button
+          outline
+          onClick={() => router.push("/home/invest-and-earn/create")}
+          label={"New Investment"}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         />
       </div>
 
@@ -122,13 +142,21 @@ const Save = (props: SaveProps) => {
                 className={`font-semibold text-lg
               ${mode === "light" ? "text-slate-700" : "text-white"}`}
               >
+<<<<<<< HEAD
                 Aucun placement en cours
+=======
+                No Availaible Investment
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               </div>
               <Button
                 small
                 outline
                 onClick={() => router.push("/home/invest-and-earn/create")}
+<<<<<<< HEAD
                 label={"Commencer un nouveau placement"}
+=======
+                label={"Start New Investment"}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               />
             </div>
           </div>

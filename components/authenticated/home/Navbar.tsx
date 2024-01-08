@@ -50,7 +50,12 @@ const Navbar = () => {
         className={`cursor-pointer text-base sm:text-lg 
          select-none font-semibold`}
       >
+<<<<<<< HEAD
 Aperçu </div>
+=======
+        Spend
+      </div>
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
       <div
         onMouseEnter={() => setInvestHover(true)}
@@ -65,7 +70,11 @@ Aperçu </div>
         className={`cursor-pointer text-base sm:text-lg 
          select-none font-semibold`}
       >
+<<<<<<< HEAD
       Gere votre pool wallet
+=======
+        Invest And Earn
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       </div>
 
       {company?.loan.status === "on" && (
@@ -79,7 +88,11 @@ Aperçu </div>
           className={`cursor-pointer text-base sm:text-lg 
          select-none font-semibold`}
         >
+<<<<<<< HEAD
    Demande de prêt
+=======
+          Get Loan
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
       )}
     </div>

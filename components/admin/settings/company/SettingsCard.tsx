@@ -48,8 +48,13 @@ const SettingsCard = (props: CardProps) => {
           {logo && (
             <Image
               className="w-[auto] h-[auto]"
+<<<<<<< HEAD
               width={91}
               height={50}
+=======
+              width={40}
+              height={40}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               alt="logo"
               src={logo}
             />

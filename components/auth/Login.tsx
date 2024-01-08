@@ -45,13 +45,22 @@ const Login = () => {
       <div className="flex flex-col gap-4 w-full items-center">
         <Logo />
 
+<<<<<<< HEAD
         {/* <ThemeToggle /> */}
+=======
+        <ThemeToggle />
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
         <div
           className={`font-bold text-2xl md:text-3xl 
         ${mode === "light" ? "text-slate-700" : "text-white"}`}
         >
+<<<<<<< HEAD
 Se connecter        </div>
+=======
+          Sign In
+        </div>
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       </div>
 
       <form
@@ -65,7 +74,11 @@ Se connecter        </div>
           <TextInput
             id="email"
             icon={AiFillMail}
+<<<<<<< HEAD
             placeholder="Entrez votre e-mail ou votre nom d'utilisateur"
+=======
+            placeholder="Enter Your Email or Username"
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             value={inputs.emailInput}
             onChange={(e) =>
               setInputs({ ...inputs, emailInput: e.target.value })
@@ -75,7 +88,11 @@ Se connecter        </div>
           <TextInput
             id="password"
             icon={inputs.isSecure ? FaEye : FaEyeSlash}
+<<<<<<< HEAD
             placeholder="Tapez votre mot de passe"
+=======
+            placeholder="Enter Your Password"
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             secureEntry={inputs.isSecure}
             iconAction={() =>
               setInputs({ ...inputs, isSecure: !inputs.isSecure })
@@ -91,7 +108,11 @@ Se connecter        </div>
           type="submit"
           outline={false}
           small={false}
+<<<<<<< HEAD
           label={"Se connecter"}
+=======
+          label={"Sign In"}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           loading={loading}
         />
       </form>
@@ -103,19 +124,31 @@ Se connecter        </div>
           font-semibold sm:cursor-pointer hover:text-gray-400 
           active:scale-[.95] transition-all select-none w-fit`}
         >
+<<<<<<< HEAD
           Mot de passe oublié?
+=======
+          Forgot your password?
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <div
           className={`font-semibold 
         ${mode === "light" ? "text-gray-500" : "text-white"}`}
         >
+<<<<<<< HEAD
         Vous n&avez pas de compte?  
+=======
+          Don&apos;t have an account? create one.
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <Button
           outline
+<<<<<<< HEAD
           label={"Créer un nouveau compte"}
+=======
+          label={"Create new acccount"}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           onClick={() => {
             router.push("/register");
           }}

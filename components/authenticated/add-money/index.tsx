@@ -6,8 +6,12 @@ import useTheme from "@/components/hooks/useTheme";
 import axios from "axios";
 import React, { useCallback, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
+<<<<<<< HEAD
 import { FaEuroSign } from "react-icons/fa";
 
+=======
+import { FaEuroSign  } from "react-icons/fa";
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 import { useSession } from "next-auth/react";
 import { Loader } from "@mantine/core";
 import DepositTypeModal from "./DepositTypeModal";
@@ -26,10 +30,16 @@ const AddMoney = () => {
   const [pendingTransaction, setPendingTransaction] = useState<
     TransactionProps[]
   >([]);
+<<<<<<< HEAD
   const [selectedDepositType, setSelectedDepositType] =
     useState<
       "automatic-coin-payment" | "manual-coin-payment" | "bank-transfer" | ""
     >("");
+=======
+  const [selectedDepositType, setSelectedDepositType] = useState<
+    "automatic-coin-payment" | "manual-coin-payment" | "bank-transfer" | ""
+  >("");
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
   const [coinName, setCoinName] = useState("");
 
   const { data: session } = useSession();
@@ -64,9 +74,13 @@ const AddMoney = () => {
 
   const displayDepositTypeHandler = () => {
     if (pendingTransaction.length > 0 && linkedTransaction.trim() === "") {
+<<<<<<< HEAD
       return toast.error(
         "Vous avez une transaction en attente. S'il vous plait sélectionner en un"
       );
+=======
+      return toast.error("You have pending transaction. Please select one");
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
     }
 
     if (
@@ -74,13 +88,21 @@ const AddMoney = () => {
       (company && Number(amountInput) < company.desposit.minimum)
     ) {
       return toast.error(
+<<<<<<< HEAD
         `Le montant minimum à déposer est €${company?.desposit.minimum}`
+=======
+        `Minimum amount to deposit is $${company?.desposit.minimum}`
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       );
     }
 
     if (company && Number(amountInput) > company.desposit.maximum) {
       return toast.error(
+<<<<<<< HEAD
         `Le montant maximum à déposer est de €${company.desposit.maximum}`
+=======
+        `Maximum amount to deposit is $${company.desposit.maximum}`
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       );
     }
     setDepositType(true);
@@ -94,7 +116,11 @@ const AddMoney = () => {
     gap-10
     ${mode === "light" ? "text-slate-700" : "text-white"}`}
         >
+<<<<<<< HEAD
           <div className="text-2xl font-bold">Effectuer un depot</div>
+=======
+          <div className="text-2xl font-bold">Add Money</div>
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
           <div
             className={`shadow-md w-full sm:w-[70%] 
@@ -108,16 +134,27 @@ const AddMoney = () => {
                 if (isNaN(Number(e.target.value))) return;
                 setAmountInput(e.target.value);
               }}
+<<<<<<< HEAD
               placeholder="Entrez le montant que vous souhaitez déposer"
               icon={FaEuroSign}
+=======
+              placeholder="Enter the amount you want to deposit"
+              icon={FaEuroSign }
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             />
 
             {!loadingTransaction && (
               <div className="text-center">
                 {pendingTransaction.length > 0
+<<<<<<< HEAD
                   ? ` vous avez ${pendingTransaction.length} transaction en attente, choisissez-en une
                   et continuez votre dépôt.`
                   : `Vous n'avez aucune transaction en attente, vous pouvez continuer votre dépôt`}
+=======
+                  ? ` You have ${pendingTransaction.length} pending transaction, choose one
+          and continue with your deposit.`
+                  : `You Do not have any pending transaction, you can continue with your Deposit`}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               </div>
             )}
 

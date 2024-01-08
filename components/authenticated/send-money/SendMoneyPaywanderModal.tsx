@@ -8,7 +8,11 @@ import axios from "axios";
 import Image from "next/image";
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
+<<<<<<< HEAD
 import { HiCurrencyEuro } from "react-icons/hi";
+=======
+import { AiOutlineDollar } from "react-icons/ai";
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 import { IoIosPerson } from "react-icons/io";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
@@ -62,8 +66,13 @@ const SendMoneyPaywanderModal = (props: TopUpModalProps) => {
           <Image
             src={company?.logo.url || ""}
             alt="logo"
+<<<<<<< HEAD
             width={91}
             height={50}
+=======
+            width={70}
+            height={70}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             className="w-[auto] h-[auto]"
           />
         </div>
@@ -74,8 +83,13 @@ const SendMoneyPaywanderModal = (props: TopUpModalProps) => {
             if (isNaN(+e.target.value)) return;
             setInput({ ...input, amount: e.target.value });
           }}
+<<<<<<< HEAD
           placeholder="Entrez le montant à envoyer"
           icon={HiCurrencyEuro}
+=======
+          placeholder="Enter amount to send"
+          icon={AiOutlineDollar}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         />
 
         <TextInput

@@ -125,10 +125,17 @@ const ManualCoinPaymentTransaction = (
         <div className="w-full flex items-center flex-col gap-2">
           <div>
             {transaction.paymentProof
+<<<<<<< HEAD
               ? "Vous avez téléchargé une preuve de paiement. Vous pouvez cliquer sur le bouton ci-dessous pour modifier l’image si vous avez téléchargé la mauvaise."
               : `  Scannez le code QR ou copiez l’adresse du portefeuille. Une fois que vous avez terminé le dépôt, téléchargez une capture d’écran de la transaction ou
               toute preuve du paiement. Notre équipe la vérifiera sous
               24 heures`}
+=======
+              ? "You have uploaded a proof of payment. You can click on the button below to change the image if you uploaded the wrong one."
+              : ` Scan QR Code or Copy wallet address. Once you are done with the deposit, upload a screen shot of the transaction or
+                      any evidence of the payment. Our team will verify it under
+                      24hrs`}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
           {transaction.paymentProof && (
             <CldImage
@@ -158,7 +165,11 @@ const ManualCoinPaymentTransaction = (
                 label={
                   transaction.paymentProof
                     ? "Change Image"
+<<<<<<< HEAD
                     : "Téléverser la preuve de paiement"
+=======
+                    : "Upload Payment Proof"
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 }
               />
             )}
@@ -167,14 +178,22 @@ const ManualCoinPaymentTransaction = (
       </div>
 
       <div className="flex flex-col gap-1">
+<<<<<<< HEAD
         <div>Don&apos;t have a wallet?</div>
+=======
+        {/* <div>Don&apos;t have a wallet?</div> */}
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
         <a
           className="animate__animated animate__headShake animate__infinite	infinite animate__fast"
           href="https://global.transak.com/"
           target="_blank"
         >
+<<<<<<< HEAD
           <Button outline label={"Acheter de la cryptomonnaie"} onClick={() => {}} />
+=======
+          <Button outline label={"Buy Now"} onClick={() => {}} />
+>>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </a>
       </div>
     </>
