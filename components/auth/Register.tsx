@@ -15,11 +15,6 @@ import { toast } from "react-hot-toast";
 import { signIn } from "next-auth/react";
 import validator from "validator";
 import AccountInactivityModal from "./AccountInactivityModal";
-<<<<<<< HEAD
-=======
-import { FaPhone } from "react-icons/fa6";
-
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
 interface RegisterProps {
   refUsername?: string | string[];
@@ -36,10 +31,6 @@ const Register = (props: RegisterProps) => {
     email: "",
     password: "",
     username: "",
-<<<<<<< HEAD
-=======
-    phone: "",
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
     refUsername: refUsername?.toString().toLowerCase() || "",
     isSecure: true,
   });
@@ -50,10 +41,6 @@ const Register = (props: RegisterProps) => {
       email: inputs.email,
       username: inputs.username,
       password: inputs.password,
-<<<<<<< HEAD
-=======
-      phone: inputs.phone,
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       refUsername:
         inputs.refUsername.trim() === "" ? "NO REF" : inputs.refUsername,
     };
@@ -121,11 +108,7 @@ const Register = (props: RegisterProps) => {
             className={`font-bold text-2xl md:text-3xl 
         ${mode === "light" ? "text-slate-700" : "text-white"}`}
           >
-<<<<<<< HEAD
            Créer un nouveau compte
-=======
-            Create New Account
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
         </div>
 
@@ -133,11 +116,7 @@ const Register = (props: RegisterProps) => {
           <TextInput
             id="name"
             icon={IoMdPerson}
-<<<<<<< HEAD
             placeholder="Entrez le nom complet, par exemple John Doe"
-=======
-            placeholder="Enter FullName e.g John Doe"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             value={inputs.fullName}
             onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
           />
@@ -145,24 +124,15 @@ const Register = (props: RegisterProps) => {
           <TextInput
             id="email"
             icon={AiFillMail}
-<<<<<<< HEAD
             placeholder="Entrer votre Email"
-=======
-            placeholder="Enter Your Email"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             value={inputs.email}
             onChange={(e) => setInputs({ ...inputs, email: e.target.value })}
           />
 
           <TextInput
             id="username"
-<<<<<<< HEAD
             icon={FaUserAlt}
             placeholder="Entrez votre nom d'utilisateur"
-=======
-            icon={FaPhone }
-            placeholder="Enter Your number phone "
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             value={inputs.username}
             onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
           />
@@ -170,11 +140,7 @@ const Register = (props: RegisterProps) => {
           <TextInput
             id="password"
             icon={inputs.isSecure ? FaEye : FaEyeSlash}
-<<<<<<< HEAD
             placeholder="Tapez votre mot de passe"
-=======
-            placeholder="Enter Your Password"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             secureEntry={inputs.isSecure}
             iconAction={() =>
               setInputs({ ...inputs, isSecure: !inputs.isSecure })
@@ -186,11 +152,7 @@ const Register = (props: RegisterProps) => {
           <TextInput
             id="refUsername"
             icon={FaUserAlt}
-<<<<<<< HEAD
             placeholder="Entrez le nom d'utilisateur de référence (facultatif)"
-=======
-            placeholder="Enter Referral Username (optional)"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             value={inputs.refUsername}
             onChange={(e) =>
               setInputs({ ...inputs, refUsername: e.target.value })
@@ -201,11 +163,7 @@ const Register = (props: RegisterProps) => {
         <Button
           outline={false}
           small={false}
-<<<<<<< HEAD
           label={"S'inscrire"}
-=======
-          label={"Sign Up"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           onClick={() => setModalOpen(true)}
           loading={loading}
         />
@@ -215,20 +173,12 @@ const Register = (props: RegisterProps) => {
             className={`font-semibold 
         ${mode === "light" ? "text-gray-500" : "text-white"}`}
           >
-<<<<<<< HEAD
            Vous avez déjà un compte?
-=======
-            Already have an account?
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
 
           <Button
             outline
-<<<<<<< HEAD
             label={"Connectez-vous à la place"}
-=======
-            label={"Login Instead"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             onClick={() => {
               router.push("/login");
             }}
