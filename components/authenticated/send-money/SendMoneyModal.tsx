@@ -10,11 +10,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
 import { IconType } from "react-icons";
-<<<<<<< HEAD
 import { HiCurrencyEuro } from "react-icons/hi";
-=======
-import { AiFillDollarCircle } from "react-icons/ai";
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 import validator from "validator";
 
 interface TopUpModalProps {
@@ -64,11 +60,7 @@ const SendMoneyModal = (props: TopUpModalProps) => {
 
   return (
     <ModalContainer
-<<<<<<< HEAD
       title={"Retrait du portefeuille"}
-=======
-      title={"Wallet Withdrawal"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       opened={opened}
       onClose={onClose}
     >
@@ -83,13 +75,8 @@ const SendMoneyModal = (props: TopUpModalProps) => {
             if (isNaN(Number(e.target.value))) return;
             setPaymentData({ ...paymentData, amount: e.target.value });
           }}
-<<<<<<< HEAD
           placeholder="Entrez le montant à envoyer"
           icon={HiCurrencyEuro}
-=======
-          placeholder="Enter amount to send"
-          icon={AiFillDollarCircle}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         />
 
         <div className="flex flex-col gap-2 w-full">
@@ -99,11 +86,7 @@ const SendMoneyModal = (props: TopUpModalProps) => {
               onChange={(e) =>
                 setPaymentData({ ...paymentData, coinName: e.target.value })
               }
-<<<<<<< HEAD
               placeholder="Entrez le nom de la cryptomonnaie. Par exemple BTC, USDT (trc20)"
-=======
-              placeholder="Enter Coin Name. E.g BTC, USDT(trc20)"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             />
 
             <TextInput
@@ -114,11 +97,7 @@ const SendMoneyModal = (props: TopUpModalProps) => {
                   walletAddress: e.target.value,
                 })
               }
-<<<<<<< HEAD
               placeholder="Entrez l'adresse du portefeuille"
-=======
-              placeholder="Enter Wallet Address"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             />
           </div>
         </div>

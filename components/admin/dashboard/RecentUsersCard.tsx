@@ -69,11 +69,7 @@ const RecentUsersCard = (props: CardProps) => {
 
             <div className="flex flex-col">
               <div className="text-xs flex-shrink-0 whitespace-nowrap">
-<<<<<<< HEAD
                 {"Solde du compte"}
-=======
-                {"Account Balance"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               </div>
               <div className="text-sm flex-shrink-0">
                 {currency}

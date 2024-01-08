@@ -214,22 +214,14 @@ const AutomaticCoinPaymentTransaction = (
         <Button label="New Deposit" onClick={() => router.push("/add-money")} />
       ) : (
         <div className="flex flex-col gap-1">
-<<<<<<< HEAD
           <div>Don&apos;t have a wallet? </div>
-=======
-          {/* <div>Don&apos;t have a wallet? </div> */}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
           <a
             className="animate__animated animate__headShake animate__infinite	infinite animate__fast"
             href="https://global.transak.com/"
             target="_blank"
           >
-<<<<<<< HEAD
             <Button outline label={"Acheter de la cryptomonnaie"} onClick={() => {}} />
-=======
-            <Button outline label={"Buy Now"} onClick={() => {}} />
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </a>
         </div>
       )}

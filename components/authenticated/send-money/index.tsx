@@ -32,11 +32,7 @@ const Send = () => {
         className={`text-xl sm:text-2xl font-bold
       ${mode === "light" ? "text-slate-700" : "text-white"}`}
       >
-<<<<<<< HEAD
        Envoyer de l&argent
-=======
-        Send Money
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       </div>
 
       <div
@@ -45,11 +41,7 @@ const Send = () => {
       >
         <PaymentCard
           onClick={() => setSendToPaywanderAccountModal(true)}
-<<<<<<< HEAD
           label={`Envoyer vers un autre ${company?.name} compte`}
-=======
-          label={`Send to other ${company?.name} Account`}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           icon={FaPaperPlane}
         />
 
@@ -57,17 +49,12 @@ const Send = () => {
           className={`text-lg sm:text-xl font-bold text-center
       ${mode === "light" ? "text-slate-700" : "text-white"}`}
         >
-<<<<<<< HEAD
           Méthodes de retrait
-=======
-          Methods For Withdrawal
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <PaymentCard
           onClick={() => setSendToOthersModal(true)}
           icon={FaWallet}
-<<<<<<< HEAD
           label="Retrait vers votre portfeuille cryptomonnaie"
         />
 
@@ -77,17 +64,6 @@ const Send = () => {
           icon={AiFillBank}
           label="Retrait vers votre bank"
         /> */}
-=======
-          label="Withdraw To your Crypto wallet"
-        />
-
-        <PaymentCard
-          disabled
-          onClick={() => {}}
-          icon={AiFillBank}
-          label="Withdraw To your Bank"
-        />
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       </div>
 
       <SendMoneyPaywanderModal

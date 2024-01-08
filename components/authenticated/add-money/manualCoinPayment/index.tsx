@@ -91,11 +91,7 @@ const ManualCoinPayment = (props: ManualCoinPaymentProps) => {
       className={`flex flex-col items-center gap-5 
     ${mode === "light" ? "text-slate-700" : "text-white"}`}
     >
-<<<<<<< HEAD
       <div>Sélectionnez une adresse de portefeuille</div>
-=======
-      <div>Select a Wallet address</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
       <div className="flex flex-col gap-3 w-full">
         {coins.map((coin) => (

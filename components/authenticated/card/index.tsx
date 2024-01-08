@@ -8,14 +8,10 @@ import axios from "axios";
 import { useSession } from "next-auth/react";
 import React, { useCallback, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
-<<<<<<< HEAD
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { GiPositionMarker } from "react-icons/gi";
 import "../card/style.css"; // Chemin vers votre feuille de style CSS
-=======
-import { FaAngleRight, FaCreditCard } from "react-icons/fa";
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
 const Card = () => {
   const { mode } = useTheme();
@@ -64,7 +60,6 @@ const Card = () => {
         flex justify-center
       ${mode === "light" ? "text-slate-700" : "text-white"}`}
         >
-<<<<<<< HEAD
           CONTACT
         </div>
         <div
@@ -182,12 +177,6 @@ const Card = () => {
           ></p>
         </div>
         {/* *** <div className={`flex flex-wrap items-center justify-center gap-2`}>
-=======
-          Cards
-        </div>
-
-        <div className={`flex flex-wrap items-center justify-center gap-2`}>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           {!loading && cards.length <= 0 && (
             <CreditCard
               onClick={() => setAddCardModal(true)}
@@ -212,28 +201,16 @@ const Card = () => {
                 cvc={item.cvc}
               />
             ))}
-<<<<<<< HEAD
         </div> */}
 
         <div className={`flex flex-col items-center justify-center gap-5`}>
           {/* <div
-=======
-        </div>
-
-        <div className={`flex flex-col items-center justify-center gap-5`}>
-          <div
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             className={`text-center font-semibold
         ${mode === "light" ? "text-gray-500" : "text-gray-300"}`}
           >
             {cards.length <= 0 ? "Add your credit/debit card" : "Add New Card"}
-<<<<<<< HEAD
           </div> */}
           {/* 
-=======
-          </div>
-
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           <div
             onClick={() => setAddCardModal(true)}
             className={`shadow-md w-[400px] max-w-full 
@@ -246,17 +223,10 @@ const Card = () => {
             <div className="flex items-center gap-3">
               <FaCreditCard
                 color={mode === "light" ? primaryColor : primaryLightColor}
-<<<<<<< HEAD
               /> */}
 
           {/* <div className="flex flex-col">
                 {/* <div
-=======
-              />
-
-              <div className="flex flex-col">
-                <div
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                   style={{
                     color:
                       mode === "light"
@@ -266,7 +236,6 @@ const Card = () => {
                   className={`font-bold text-lg`}
                 >
                   Link your card
-<<<<<<< HEAD
                 </div> */}
 
           {/* <div
@@ -276,27 +245,12 @@ const Card = () => {
                   Withdraw funds directly to your bank
                 </div> */}
           {/* </div>
-=======
-                </div>
-
-                <div
-                  className={`font-semibold text-sm 
-              ${mode === "light" ? "text-gray-500" : "text-gray-300"}`}
-                >
-                  
-                </div>
-              </div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             </div>
 
             <FaAngleRight
               color={mode === "light" ? primaryColor : primaryLightColor}
             />
-<<<<<<< HEAD
           </div> */}
-=======
-          </div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
       </div>
 
@@ -310,7 +264,3 @@ const Card = () => {
 };
 
 export default Card;
-<<<<<<< HEAD
-
-=======
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7

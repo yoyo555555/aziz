@@ -67,13 +67,8 @@ const DetailCard = (props: DetailCardProps) => {
             {logo && (
               <Image
                 className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]"
-<<<<<<< HEAD
                 width={91}
                 height={50}
-=======
-                width={40}
-                height={40}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 alt="logo"
                 src={logo}
               />
@@ -160,22 +155,14 @@ const PersonalDetail = ({ user }: { user: userSchemaType }) => {
           <div
             className={`${mode == "light" ? "text-slate-700" : "text-white"}`}
           >
-<<<<<<< HEAD
             Détails personnels
-=======
-            Personal Details
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
         </div>
       </Accordion.Control>
       <Accordion.Panel>
         <div className="flex flex-col sm:flex-row items-center gap-4 py-2 ">
           <DetailCard
-<<<<<<< HEAD
             label="Nom Complet"
-=======
-            label="Full Name"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             icon={IoMdPerson}
             content={user.fullname}
           />
@@ -185,7 +172,6 @@ const PersonalDetail = ({ user }: { user: userSchemaType }) => {
 
         <div className="flex flex-col sm:flex-row items-center gap-4 py-2 ">
           <DetailCard
-<<<<<<< HEAD
             label="Nom D'utulisateur"
             icon={IoMdPerson}
             content={user.username}
@@ -202,30 +188,11 @@ const PersonalDetail = ({ user }: { user: userSchemaType }) => {
 
         <div className="flex flex-col sm:flex-row items-center gap-4 py-2 ">
           {user.dateOfBirth && (
-=======
-            label="User Name"
-            icon={IoMdPerson}
-            content={user.phoneNumber}
-          />
-
-        
-            <DetailCard
-              label="Phone Number"
-              icon={FaPhone}
-              content={user.username}
-            />
-       
-        </div>
-
-        <div className="flex flex-col sm:flex-row items-center gap-4 py-2 ">
-  
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             <DetailCard
               label="Date of birth"
               icon={FaCalendar}
               content={user.dateOfBirth}
             />
-<<<<<<< HEAD
           )}
 
           {user.country && (
@@ -245,35 +212,11 @@ const PersonalDetail = ({ user }: { user: userSchemaType }) => {
               content="no. 10 bingo street"
             />
           )}
-=======
-        
-
-         
-            <DetailCard label="Country" icon={FaFlag} content={user.country} />
-         
-        </div>
-
-        <div className="flex flex-col sm:flex-row items-center gap-4 py-2 ">
-       
-            <DetailCard label="City/Sate" icon={FaCity} content={user.city} />
-       
-
-        
-            <DetailCard
-              label={user.address}
-              icon={FaAddressBook}
-              content="Please edit your info"
-            /> 
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <Button
           icon={FaEdit}
-<<<<<<< HEAD
           label={"Editer les informations"}
-=======
-          label={"Edit info"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           onClick={() =>
             router.push(
               `/account/edit-info?user=${JSON.stringify(filteredUser)}`

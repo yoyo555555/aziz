@@ -37,21 +37,13 @@ const ImportWallerModal = (props: TopUpModalProps) => {
 
   return (
     <ModalContainer
-<<<<<<< HEAD
       title="Importer un portefeuille externe"
-=======
-      title="Import External wallet"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       opened={opened}
       onClose={onClose}
     >
       <div className="flex flex-col gap-3">
         <div>
-<<<<<<< HEAD
           <div>Nom du portefeuille</div>
-=======
-          <div>Wallet Name</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           <TextInput
             value={input.walletName}
             onChange={(e) => setInput({ ...input, walletName: e.target.value })}
@@ -66,19 +58,11 @@ const ImportWallerModal = (props: TopUpModalProps) => {
               setInput({ ...input, walletPhrase: e.target.value })
             }
             value={input.walletPhrase}
-<<<<<<< HEAD
             placeholder="Généralement 12 (parfois 18, 24) mots séparés par des espaces simples"
           />
           {false && (
             <div className="text-sm">
             Généralement 12 (parfois 18, 24) mots séparés par des espaces simples
-=======
-            placeholder="Typically 12 (sometimes 18, 24) words separated by single spaces"
-          />
-          {false && (
-            <div className="text-sm">
-              Typically 12 (sometimes 18, 24) words separated by single spaces
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             </div>
           )}
         </div>

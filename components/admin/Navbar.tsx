@@ -116,11 +116,7 @@ const AdminNavbar = () => {
             items-center gap-1 font-semibold`}
           >
             <FaHome size={24} />
-<<<<<<< HEAD
             <div className="hidden sm:block">Acceuil</div>
-=======
-            <div className="hidden sm:block">Home</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
 
           <div
@@ -134,11 +130,7 @@ const AdminNavbar = () => {
             items-center gap-1 font-semibold`}
           >
             <IoMdPerson size={24} />
-<<<<<<< HEAD
             <div className="hidden sm:block">Utulisateur</div>
-=======
-            <div className="hidden sm:block">Users</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
 
           <div

@@ -44,20 +44,11 @@ const WithdrawModal = (props: WithdrawModalProps) => {
   };
 
   return (
-<<<<<<< HEAD
     <ModalContainer title="Retrait" opened={opened} onClose={onClose}>
       <div className="flex flex-col gap-3">
         <div>
         Le montant pouvant être retiré est de {currency}
           {formatNumber(user.investWithdrawableBalance)} <br /> Remarque : L&argent sera ajouté au solde de votre compte. 
-=======
-    <ModalContainer title="Withdraw" opened={opened} onClose={onClose}>
-      <div className="flex flex-col gap-3">
-        <div>
-          Amount that can be withdrawn is {currency}
-          {formatNumber(user.investWithdrawableBalance)} <br /> Note: Money will
-          be added to your account balance.
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         </div>
 
         <TextInput
@@ -66,19 +57,11 @@ const WithdrawModal = (props: WithdrawModalProps) => {
             if (isNaN(Number(e.target.value))) return;
             setAmountInput(e.target.value);
           }}
-<<<<<<< HEAD
           placeholder="Entrer un montant pour la demande de retrait"
         />
         <Button
           loading={loading}
           label="Retrait"
-=======
-          placeholder="Enter amount to withdraw"
-        />
-        <Button
-          loading={loading}
-          label="Withdraw"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           onClick={withdrawalHandler}
         />
       </div>
