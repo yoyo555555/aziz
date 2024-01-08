@@ -72,20 +72,11 @@ const EditBalanceModal = (props: EditBalanceModalProps) => {
               if (!isNumber(+e.target.value)) return;
               setInput({ ...input, accountBalance: e.target.value });
             }}
-<<<<<<< HEAD
             placeholder="Solde du compte"
           />
 
           <label htmlFor="solde du portefeuille d'investissement">
           Solde d&investissement retirable          </label>
-=======
-            placeholder="Account Balance"
-          />
-
-          <label htmlFor="invest-balance">
-            Withdrawable Investment Balance
-          </label>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           <TextInput
             id="invest-balance"
             value={input.investWithdrawableBalance}
@@ -93,17 +84,10 @@ const EditBalanceModal = (props: EditBalanceModalProps) => {
               if (!isNumber(+e.target.value)) return;
               setInput({ ...input, investWithdrawableBalance: e.target.value });
             }}
-<<<<<<< HEAD
             placeholder="solde du portefeuille d'investissement"
           />
 
           <label htmlFor="loan-balance">Solde du prêt</label>
-=======
-            placeholder="Invest Balance"
-          />
-
-          <label htmlFor="loan-balance">Loan Balance</label>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           <TextInput
             id="loan-balance"
             value={input.loanBalance}
@@ -111,17 +95,10 @@ const EditBalanceModal = (props: EditBalanceModalProps) => {
               if (!isNumber(+e.target.value)) return;
               setInput({ ...input, loanBalance: e.target.value });
             }}
-<<<<<<< HEAD
             placeholder="Solde du prêt"
           />
         </div>
         <Button loading={loading} label="Recharger" onClick={handler} />
-=======
-            placeholder="Loan Balance"
-          />
-        </div>
-        <Button loading={loading} label="Top Up" onClick={handler} />
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       </div>
     </ModalContainer>
   );

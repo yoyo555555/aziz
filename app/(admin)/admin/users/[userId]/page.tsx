@@ -132,11 +132,7 @@ const Page = () => {
             </div>
 
             <div className="w-full flex justify-between items-center py-4 border-b">
-<<<<<<< HEAD
               <div>Solde du compte:</div>
-=======
-              <div>Account Balance:</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               <div>
                 {currency}
                 {formatNumber(user.accountBalance)}
@@ -144,11 +140,7 @@ const Page = () => {
             </div>
 
             <div className="w-full flex justify-between items-center py-4 border-b">
-<<<<<<< HEAD
               <div>Solde retirable:</div>
-=======
-              <div>Withdrawable Invest Balance:</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               <div>
                 {currency}
                 {formatNumber(user.investWithdrawableBalance)}
@@ -156,11 +148,7 @@ const Page = () => {
             </div>
 
             <div className="w-full flex justify-between items-center py-4 border-b">
-<<<<<<< HEAD
               <div>Solde du prêt:</div>
-=======
-              <div>Loan Balance:</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               <div>
                 {currency}
                 {formatNumber(user.loanBalance)}
@@ -169,44 +157,28 @@ const Page = () => {
 
             {user.phoneNumber && (
               <div className="w-full flex justify-between items-center py-4 border-b">
-<<<<<<< HEAD
                 <div>Numéro de téléphone:</div>
-=======
-                <div>Phone Number:</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 <div>{user.phoneNumber}</div>
               </div>
             )}
 
             {user.dateOfBirth && (
               <div className="w-full flex justify-between items-center py-4 border-b">
-<<<<<<< HEAD
                 <div>Date de naissance:</div>
-=======
-                <div>Date Of Birth:</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 <div>{user.dateOfBirth}</div>
               </div>
             )}
 
             {user.country && (
               <div className="w-full flex justify-between items-center py-4 border-b">
-<<<<<<< HEAD
                 <div>Pays:</div>
-=======
-                <div>Country:</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 <div>{user.country}</div>
               </div>
             )}
 
             {user.city && (
               <div className="w-full flex justify-between items-center py-4 border-b">
-<<<<<<< HEAD
                 <div>Ville:</div>
-=======
-                <div>City:</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 <div>{user.city}</div>
               </div>
             )}
@@ -223,40 +195,24 @@ const Page = () => {
             <Button
               onClick={() => setModals({ ...modals, editDetails: true })}
               outline
-<<<<<<< HEAD
               label={"Modifier les détails"}
             />
             <Button
               onClick={() => setModals({ ...modals, editBalance: true })}
               label={"Modifier le solde"}
-=======
-              label={"Edit Details"}
-            />
-            <Button
-              onClick={() => setModals({ ...modals, editBalance: true })}
-              label={"Edit Balance"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             />
           </div>
 
           <div className="flex flex-col sm:flex-row w-full gap-3">
             <Button
               onClick={() => setModals({ ...modals, deleteUser: true })}
-<<<<<<< HEAD
               label={"Supprimer l'utilisateur"}
-=======
-              label={"Delete User"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             />
 
             <Button
               outline
               onClick={() => setModals({ ...modals, resetPassword: true })}
-<<<<<<< HEAD
               label={"réinitialiser le mot de passe"}
-=======
-              label={"Reset Password"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             />
           </div>
 

@@ -111,11 +111,7 @@ const Page = () => {
             icon={FaSearch}
             value={searchInput}
             onChange={searchInputChangeHandler}
-<<<<<<< HEAD
             placeholder="Rechercher une transaction"
-=======
-            placeholder="Search Transactions"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           />
         </div>
       </div>
@@ -141,11 +137,7 @@ const Page = () => {
           <div className="flex justify-center flex-col items-center">
             <AiOutlineInbox color={primaryLightColor} size={100} />
             <div className={`font-semibold text-lg`}>
-<<<<<<< HEAD
             Aucune opération en cours
-=======
-              No Availaible transactions
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             </div>
           </div>
         )}

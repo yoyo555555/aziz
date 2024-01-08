@@ -101,11 +101,7 @@ const Page = () => {
             {(transaction?.pendingBalance ||
               transaction.pendingBalance == 0) && (
               <div className="w-full flex justify-between items-center py-4 border-b">
-<<<<<<< HEAD
                 <div>Solde en attente:</div>
-=======
-                <div>Pending balance:</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
                 <div>
                   {currency}
                   {formatNumber(transaction.pendingBalance)}
