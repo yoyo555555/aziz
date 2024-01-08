@@ -56,11 +56,7 @@ const PaymentSetupModal = (props: ModalProps) => {
           <div className="text-rose-500 text-lg font-bold">Payments</div>
 
           <div className="w-full flex gap-x-2 gap-y-2 flex-col sm:flex-row items-center">
-<<<<<<< HEAD
             <div className="w-full flex flex-col">
-=======
-            {/* <div className="w-full flex flex-col">
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               <div className="font-semibold">Automatic Coin Payment</div>
               <Select
                 size="lg"
@@ -71,11 +67,7 @@ const PaymentSetupModal = (props: ModalProps) => {
                   { label: "OFF", value: "off" },
                 ]}
               />
-<<<<<<< HEAD
             </div>
-=======
-            </div> */}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
 
             <div className="w-full flex flex-col">
               <div className="font-semibold">Manual Coin Payment</div>
@@ -91,11 +83,7 @@ const PaymentSetupModal = (props: ModalProps) => {
             </div>
 
             <div className="w-full flex flex-col">
-<<<<<<< HEAD
               <div className="font-semibold">Bank Transfer</div>
-=======
-              <div className="font-semibold">Moonpay</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               <Select
                 size="lg"
                 value={bankTransfer}
