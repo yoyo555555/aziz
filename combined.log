@@ -13,3 +13,4 @@
 {"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-07 12:31:47"}
 {"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-07 12:37:15"}
 >>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
+{"level":"info","message":"Message sent: %s\", <d6445ebe-5e0d-f0a1-f2de-d1da0ae20ad6@coinxsafe.eu>","timestamp":"2024-01-08 19:50:55"}
