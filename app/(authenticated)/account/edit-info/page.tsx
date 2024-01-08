@@ -76,11 +76,7 @@ const Page = () => {
     ${mode === "light" ? "text-slate-700" : "text-white"}`}
     >
       <div className="text-2xl flex font-bold items-center gap-2">
-<<<<<<< HEAD
       Editer les informations
-=======
-        Edit Info
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         <FaEdit />
       </div>
 
@@ -91,11 +87,7 @@ const Page = () => {
       >
         <div className="flex items-center gap-4 flex-col sm:flex-row">
           <div className="w-full">
-<<<<<<< HEAD
             <div>Nom Complet</div>
-=======
-            <div>Full Name</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             <TextInput
               value={input.fullname}
               onChange={(e) => setInput({ ...input, fullname: e.target.value })}
@@ -116,11 +108,7 @@ const Page = () => {
 
         <div className="flex items-center gap-4 flex-col sm:flex-row">
           <div className="w-full">
-<<<<<<< HEAD
             <div>Nom D&utulisateur</div>
-=======
-            <div>User Name</div>
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             <TextInput
               disabled
               value={input.username}

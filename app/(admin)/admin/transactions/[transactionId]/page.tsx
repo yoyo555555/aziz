@@ -286,7 +286,7 @@ const Page = () => {
               height={transaction.paymentProof.height}
               alt={transaction.paymentProof.original_filename}
               src={transaction.paymentProof.public_id}
-              onError={(event) => {
+              onError={(event: any) => {
                 console.log(event);
                 toast.error(
                   "seems somthings went wrong getting your image. Upload new one or try reloading the page"
