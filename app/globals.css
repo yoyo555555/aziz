@@ -6,7 +6,6 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
 }
-<<<<<<< HEAD
 img.w-\[100\%\].h-\[100\%\] {
   width: 90px;
 }
@@ -20,5 +19,3 @@ form.flex.flex-col.gap-4.w-full {
   display: flex;
   margin-top: -27px;
 }
-=======
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7

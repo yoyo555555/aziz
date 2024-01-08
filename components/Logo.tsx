@@ -34,13 +34,8 @@ const Logo = (props: LogoProps) => {
               priority
               src={company?.logo?.url || ""}
               alt="logo"
-<<<<<<< HEAD
               width={91}
               height={50}
-=======
-              width={60}
-              height={60}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               className="w-[100%] h-[100%]"
             />
           </div>
@@ -58,13 +53,8 @@ const Logo = (props: LogoProps) => {
               priority
               src={company?.logo?.url || ""}
               alt="logo"
-<<<<<<< HEAD
               width={91}
               height={50}
-=======
-              width={100}
-              height={100}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
               className="w-[100%] h-[100%]"
             />
           </div>

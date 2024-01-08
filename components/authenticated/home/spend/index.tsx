@@ -51,11 +51,7 @@ const Spend = (props: SpendProps) => {
             className={`text-xs font-medium 
           ${mode === "light" ? "text-slate-700" : "text-white"}`}
           >
-<<<<<<< HEAD
             Solde du compte
-=======
-            Account Balance
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
 
           <div
@@ -72,11 +68,7 @@ const Spend = (props: SpendProps) => {
             className={`text-xs font-medium 
           ${mode === "light" ? "text-slate-700" : "text-white"}`}
           >
-<<<<<<< HEAD
           Solde en attente
-=======
-            Pending Balance
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
           </div>
 
           <div
@@ -90,19 +82,11 @@ const Spend = (props: SpendProps) => {
       </div>
 
       <div className="flex gap-3 w-full items-center ">
-<<<<<<< HEAD
         <Button onClick={() => router.push("/add-money")} label={"Effectuer un depot"} />
         <Button
           outline
           onClick={() => router.push("/send-money")}
           label={"Effectuer un retrait"}
-=======
-        <Button onClick={() => router.push("/add-money")} label={"Add Money"} />
-        <Button
-          outline
-          onClick={() => router.push("/send-money")}
-          label={"Withdraw Money"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
         />
       </div>
 
@@ -110,11 +94,7 @@ const Spend = (props: SpendProps) => {
         value={searchInput}
         onChange={searchInputChangeHandler}
         icon={FaSearch}
-<<<<<<< HEAD
         placeholder="Rechercher une transaction"
-=======
-        placeholder="Search Transaction"
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
       />
 
       <div className="flex flex-col w-full">
@@ -139,11 +119,7 @@ const Spend = (props: SpendProps) => {
               className={`font-semibold text-lg
               ${mode === "light" ? "text-slate-700" : "text-white"}`}
             >
-<<<<<<< HEAD
               Aucune opération en cours
-=======
-              No Availaible transactions
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7
             </div>
           </div>
         )}
