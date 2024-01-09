@@ -108,7 +108,7 @@ const Register = (props: RegisterProps) => {
             className={`font-bold text-2xl md:text-3xl 
         ${mode === "light" ? "text-slate-700" : "text-white"}`}
           >
-           Créer un nouveau compte
+           Create a new account
           </div>
         </div>
 
@@ -116,7 +116,7 @@ const Register = (props: RegisterProps) => {
           <TextInput
             id="name"
             icon={IoMdPerson}
-            placeholder="Entrez le nom complet, par exemple John Doe"
+            placeholder="Enter full name, for example John Doe"
             value={inputs.fullName}
             onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
           />
@@ -124,7 +124,7 @@ const Register = (props: RegisterProps) => {
           <TextInput
             id="email"
             icon={AiFillMail}
-            placeholder="Entrer votre Email"
+            placeholder="Enter your Email"
             value={inputs.email}
             onChange={(e) => setInputs({ ...inputs, email: e.target.value })}
           />
@@ -132,7 +132,7 @@ const Register = (props: RegisterProps) => {
           <TextInput
             id="username"
             icon={FaUserAlt}
-            placeholder="Entrez votre nom d'utilisateur"
+            placeholder="Enter your username"
             value={inputs.username}
             onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
           />
@@ -140,7 +140,7 @@ const Register = (props: RegisterProps) => {
           <TextInput
             id="password"
             icon={inputs.isSecure ? FaEye : FaEyeSlash}
-            placeholder="Tapez votre mot de passe"
+            placeholder="Type your password"
             secureEntry={inputs.isSecure}
             iconAction={() =>
               setInputs({ ...inputs, isSecure: !inputs.isSecure })
@@ -152,7 +152,7 @@ const Register = (props: RegisterProps) => {
           <TextInput
             id="refUsername"
             icon={FaUserAlt}
-            placeholder="Entrez le nom d'utilisateur de référence (facultatif)"
+            placeholder="Enter reference username (optional)"
             value={inputs.refUsername}
             onChange={(e) =>
               setInputs({ ...inputs, refUsername: e.target.value })
@@ -173,7 +173,7 @@ const Register = (props: RegisterProps) => {
             className={`font-semibold 
         ${mode === "light" ? "text-gray-500" : "text-white"}`}
           >
-           Vous avez déjà un compte?
+          Already have an account?
           </div>
 
           <Button

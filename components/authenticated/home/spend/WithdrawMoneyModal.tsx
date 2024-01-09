@@ -59,6 +59,7 @@ const SendMoneyModal = (props: TopUpModalProps) => {
             height={40}
             alt="logo"
             src={"/logo-icon.png"}
+            margin-top={-25}
           />
         </div>
 

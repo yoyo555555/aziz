@@ -72,11 +72,11 @@ const EditBalanceModal = (props: EditBalanceModalProps) => {
               if (!isNumber(+e.target.value)) return;
               setInput({ ...input, accountBalance: e.target.value });
             }}
-            placeholder="Solde du compte"
+            placeholder="Account balance"
           />
 
-          <label htmlFor="solde du portefeuille d'investissement">
-          Solde d&investissement retirable          </label>
+          <label htmlFor="investment portfolio balance">
+          investment portfolio balance         </label>
           <TextInput
             id="invest-balance"
             value={input.investWithdrawableBalance}
@@ -84,7 +84,7 @@ const EditBalanceModal = (props: EditBalanceModalProps) => {
               if (!isNumber(+e.target.value)) return;
               setInput({ ...input, investWithdrawableBalance: e.target.value });
             }}
-            placeholder="solde du portefeuille d'investissement"
+            placeholder="investment portfolio balance"
           />
 
           <label htmlFor="loan-balance">Solde du prêt</label>

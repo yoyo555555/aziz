@@ -54,7 +54,7 @@ const Save = (props: SaveProps) => {
     >
       <div className="flex flex-col sm:flex-row items-center gap-1 w-full justify-between px-3">
         <div className="flex flex-col gap-1 w-full sm:items-center">
-          <div className={`text-xs font-medium`}>solde des placements</div>
+          <div className={`text-xs font-medium`}>investment balance</div>
 
           <div
             className={`font-bold text-3xl sm:text-4xl  
@@ -66,7 +66,7 @@ const Save = (props: SaveProps) => {
         </div>
 
         <div className="flex flex-col gap-1 w-full sm:items-center">
-          <div className={`text-xs font-medium`}>Solde des bénéfices</div>
+          <div className={`text-xs font-medium`}>Profit balance</div>
 
           <div
             className={`font-bold text-3xl sm:text-4xl 
@@ -78,7 +78,7 @@ const Save = (props: SaveProps) => {
         </div>
 
         <div className="flex flex-col gap-1 w-full sm:items-center">
-          <div className={`text-xs font-medium`}>Solde à retirer</div>
+          <div className={`text-xs font-medium`}>Balance to withdraw</div>
 
           <div
             className={`font-bold text-3xl sm:text-4xl 
@@ -91,11 +91,11 @@ const Save = (props: SaveProps) => {
       </div>
 
       <div className="flex gap-2">
-        <Button onClick={() => setWithdrawModal(true)} label={"Retrait"} />
+        <Button onClick={() => setWithdrawModal(true)} label={"withdraw"} />
         <Button
           outline
           onClick={() => router.push("/home/invest-and-earn/create")}
-          label={"nouveaux investissements"}
+          label={"new investments"}
         />
       </div>
 
@@ -122,13 +122,13 @@ const Save = (props: SaveProps) => {
                 className={`font-semibold text-lg
               ${mode === "light" ? "text-slate-700" : "text-white"}`}
               >
-                Aucun placement en cours
+               No placement in progress
               </div>
               <Button
                 small
                 outline
                 onClick={() => router.push("/home/invest-and-earn/create")}
-                label={"Commencer un nouveau placement"}
+                label={"Start a new investment"}
               />
             </div>
           </div>

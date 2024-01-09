@@ -111,7 +111,7 @@ const Page = () => {
             icon={FaSearch}
             value={searchInput}
             onChange={searchInputChangeHandler}
-            placeholder="Rechercher une transaction"
+            placeholder="Search for a transaction"
           />
         </div>
       </div>

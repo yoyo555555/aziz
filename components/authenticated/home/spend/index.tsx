@@ -51,8 +51,7 @@ const Spend = (props: SpendProps) => {
             className={`text-xs font-medium 
           ${mode === "light" ? "text-slate-700" : "text-white"}`}
           >
-            Solde du compte
-          </div>
+Account balance          </div>
 
           <div
             className={`font-bold text-3xl sm:text-4xl 
@@ -68,7 +67,7 @@ const Spend = (props: SpendProps) => {
             className={`text-xs font-medium 
           ${mode === "light" ? "text-slate-700" : "text-white"}`}
           >
-          Solde en attente
+          Pending balance
           </div>
 
           <div
@@ -82,11 +81,11 @@ const Spend = (props: SpendProps) => {
       </div>
 
       <div className="flex gap-3 w-full items-center ">
-        <Button onClick={() => router.push("/add-money")} label={"Effectuer un depot"} />
+        <Button onClick={() => router.push("/add-money")} label={"Make a deposit"} />
         <Button
           outline
           onClick={() => router.push("/send-money")}
-          label={"Effectuer un retrait"}
+          label={"Make a withdrawal"}
         />
       </div>
 
@@ -94,7 +93,7 @@ const Spend = (props: SpendProps) => {
         value={searchInput}
         onChange={searchInputChangeHandler}
         icon={FaSearch}
-        placeholder="Rechercher une transaction"
+        placeholder="Search for a transaction"
       />
 
       <div className="flex flex-col w-full">
@@ -119,7 +118,7 @@ const Spend = (props: SpendProps) => {
               className={`font-semibold text-lg
               ${mode === "light" ? "text-slate-700" : "text-white"}`}
             >
-              Aucune opération en cours
+            No operations in progress
             </div>
           </div>
         )}

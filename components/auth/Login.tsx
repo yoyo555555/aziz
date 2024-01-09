@@ -51,7 +51,7 @@ const Login = () => {
           className={`font-bold text-2xl md:text-3xl 
         ${mode === "light" ? "text-slate-700" : "text-white"}`}
         >
-Se connecter        </div>
+Login        </div>
       </div>
 
       <form
@@ -65,7 +65,7 @@ Se connecter        </div>
           <TextInput
             id="email"
             icon={AiFillMail}
-            placeholder="Entrez votre e-mail ou votre nom d'utilisateur"
+            placeholder="Enter your email or username"
             value={inputs.emailInput}
             onChange={(e) =>
               setInputs({ ...inputs, emailInput: e.target.value })
@@ -75,7 +75,7 @@ Se connecter        </div>
           <TextInput
             id="password"
             icon={inputs.isSecure ? FaEye : FaEyeSlash}
-            placeholder="Tapez votre mot de passe"
+            placeholder="Type your password"
             secureEntry={inputs.isSecure}
             iconAction={() =>
               setInputs({ ...inputs, isSecure: !inputs.isSecure })
@@ -91,7 +91,7 @@ Se connecter        </div>
           type="submit"
           outline={false}
           small={false}
-          label={"Se connecter"}
+          label={" log in"}
           loading={loading}
         />
       </form>
@@ -103,19 +103,19 @@ Se connecter        </div>
           font-semibold sm:cursor-pointer hover:text-gray-400 
           active:scale-[.95] transition-all select-none w-fit`}
         >
-          Mot de passe oublié?
+          Forgot your password?
         </div>
 
         <div
           className={`font-semibold 
         ${mode === "light" ? "text-gray-500" : "text-white"}`}
         >
-        Vous n&avez pas de compte?  
+      You do not have an account?
         </div>
 
         <Button
           outline
-          label={"Créer un nouveau compte"}
+          label={"Create a new account"}
           onClick={() => {
             router.push("/register");
           }}

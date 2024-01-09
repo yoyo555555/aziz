@@ -66,11 +66,11 @@ const Navbar = () => {
           className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
         >
-          Acceuil
+          Dashboard
           {/* <FaHome /> */}
         </div>
 
-        <div
+        {/* <div
           onMouseEnter={() => setMoneyHover(true)}
           onMouseLeave={() => setMoneyHover(false)}
           style={{
@@ -82,8 +82,8 @@ const Navbar = () => {
 
         `}
         >
-          Envoyer de l&argent {/* <FaPaperPlane /> */}
-        </div>
+          Envoyer de l&argent 
+        </div> */}
 
         <div
           onMouseEnter={() => setCardHover(true)}
@@ -128,7 +128,7 @@ const Navbar = () => {
           className={`flex cursor-pointer
         text-lg items-center gap-1 font-semibold`}
         >
-          <span className="hidden sm:block">Compte</span>
+          <span className="hidden sm:block">Acccount</span>
           <IoMdPerson size={22} />
         </div>
 

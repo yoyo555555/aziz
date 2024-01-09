@@ -116,7 +116,7 @@ const AdminNavbar = () => {
             items-center gap-1 font-semibold`}
           >
             <FaHome size={24} />
-            <div className="hidden sm:block">Acceuil</div>
+            <div className="hidden sm:block">Home</div>
           </div>
 
           <div

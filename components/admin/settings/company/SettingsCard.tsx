@@ -52,6 +52,7 @@ const SettingsCard = (props: CardProps) => {
               height={50}
               alt="logo"
               src={logo}
+              margin-top={-25}
             />
           )}
           {Icon && (

@@ -71,6 +71,7 @@ const DetailCard = (props: DetailCardProps) => {
                 height={50}
                 alt="logo"
                 src={logo}
+                margin-top={-25}
               />
             )}
 
@@ -155,14 +156,14 @@ const PersonalDetail = ({ user }: { user: userSchemaType }) => {
           <div
             className={`${mode == "light" ? "text-slate-700" : "text-white"}`}
           >
-            Détails personnels
+           personal details
           </div>
         </div>
       </Accordion.Control>
       <Accordion.Panel>
         <div className="flex flex-col sm:flex-row items-center gap-4 py-2 ">
           <DetailCard
-            label="Nom Complet"
+            label="Full Name"
             icon={IoMdPerson}
             content={user.fullname}
           />
@@ -172,7 +173,7 @@ const PersonalDetail = ({ user }: { user: userSchemaType }) => {
 
         <div className="flex flex-col sm:flex-row items-center gap-4 py-2 ">
           <DetailCard
-            label="Nom D'utulisateur"
+            label="Username"
             icon={IoMdPerson}
             content={user.username}
           />
@@ -216,7 +217,7 @@ const PersonalDetail = ({ user }: { user: userSchemaType }) => {
 
         <Button
           icon={FaEdit}
-          label={"Editer les informations"}
+          label={"Edit information"}
           onClick={() =>
             router.push(
               `/account/edit-info?user=${JSON.stringify(filteredUser)}`

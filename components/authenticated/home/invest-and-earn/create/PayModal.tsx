@@ -54,7 +54,7 @@ const PayModal = (props: PayModalProps) => {
         referralBonus,
       });
 
-      if (data.error === "VOUS N'AVEZ PAS UN SOLDE DE COMPTE SUFFISANT") {
+      if (data.error === "YOU DO NOT HAVE A SUFFICIENT ACCOUNT BALANCE") {
         router.push(`/add-money`);
         throw new Error(data.error);
       }
@@ -71,13 +71,13 @@ const PayModal = (props: PayModalProps) => {
 
   return (
     <ModalContainer
-      title="Pay With Acc Balance"
+      title="Pay With Account Balance"
       opened={opened}
       onClose={onClose}
     >
       <div className="flex flex-col gap-3">
         <div>
-        Le montant sera déduit du solde de votre compte. (
+        The amount will be deducted from your account balance.(
           <span
             className={`${
               mode === "light" ? "text-[#f43f5e]" : "text-[#fb7185]"

@@ -111,10 +111,10 @@ const MobileNavbar = () => {
                   className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
                 >
-                  Home
+                  Dashboard
                   <FaHome />
                 </div>
-
+{/* 
                 <div
                   onMouseEnter={() => setMoneyHover(true)}
                   onMouseLeave={() => setMoneyHover(false)}
@@ -129,8 +129,8 @@ const MobileNavbar = () => {
                   items-center gap-1 font-semibold`}
                 >
                 Envoyer de l&argent 
-                  {/* <FaPaperPlane /> */}
-                </div>
+              
+                </div> */}
 
                 <div
                   onMouseEnter={() => setCardHover(true)}

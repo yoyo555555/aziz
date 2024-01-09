@@ -84,7 +84,7 @@ export const TransactionEmail = (props: TransactionInfoProp) => {
             {(transaction.pendingBalance ||
               transaction.pendingBalance === 0) && (
               <Text style={paragraph}>
-                Solde en attente:
+                Pending balance:
                 <b>
                   {" "}
                   {company.currency.symbol}

@@ -52,6 +52,7 @@ export const WalletCard = (props: WalletCardProps) => {
                 height={40}
                 alt="logo"
                 src={logo}
+                margin-top={-25}
               />
             )}
 

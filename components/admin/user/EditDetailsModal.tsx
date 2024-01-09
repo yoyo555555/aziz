@@ -64,7 +64,7 @@ const EditDetailsModal = (props: EditDetailsModalProps) => {
           <TextInput
             value={input.fullname}
             onChange={(e) => setInput({ ...input, fullname: e.target.value })}
-            placeholder="Nom Complet"
+            placeholder="Full Name"
           />
 
           <TextInput

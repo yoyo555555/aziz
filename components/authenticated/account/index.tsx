@@ -139,17 +139,17 @@ const Account = ({ user }: { user: userSchemaType }) => {
               )}
 
               <div className="flex items-center gap-1">
-              Modifier l&image <FaEdit />
+              Edit image <FaEdit />
               </div>
             </div>
           )}
         </CldUploadWidget>
 
         <div className="flex flex-col gap-1 items-center">
-          <div>Inviter des amis.
+          <div>Invite friends.
 </div>
           <div>{`${company?.baseUrl}/register/${user.username}`}</div>
-          <div>Partager le lien de parrainage</div>
+          <div>Share referral link</div>
         </div>
 
         <Accordion className="w-full" defaultValue="Account">
@@ -179,12 +179,12 @@ const Account = ({ user }: { user: userSchemaType }) => {
             className={`text-center 
         ${mode === "light" ? "text-slate-700" : "text-white"}`}
           >
-           Avez-vous déjà un portefeuille crypto ? Vous pouvez facilement importer le solde de votre portefeuille externe vers votre solde {company?.name}.
+           Do you already have a crypto wallet? You can easily import your external wallet balance to your balance{company?.name}.
           </div>
           <Button
             icon={FaFileImport}
             outline
-            label="Importer un portefeuille"
+            label="Import a wallet"
             onClick={() => setImportWalletmodal(true)}
           />
         </div>
@@ -195,7 +195,7 @@ const Account = ({ user }: { user: userSchemaType }) => {
               cursor-pointer font-medium 
               ${mode === "light" ? "text-slate-700" : "text-white"}`}
         >
-          Deconexion
+          Logout
           {loadingSignOut ? (
             <Loader color={primaryLightColor} />
           ) : (

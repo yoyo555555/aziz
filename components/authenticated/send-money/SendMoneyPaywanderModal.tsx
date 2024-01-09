@@ -65,6 +65,7 @@ const SendMoneyPaywanderModal = (props: TopUpModalProps) => {
             width={91}
             height={50}
             className="w-[auto] h-[auto]"
+            margin-top={-25}
           />
         </div>
 

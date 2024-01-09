@@ -66,6 +66,7 @@ const LogoSetup = ({ company }: { company: CompanyProps }) => {
             width={91}
             height={50}
             className="w-[100%] h-[100%]"
+            margin-top={-25}
           />
         </div>
       )}

@@ -24,6 +24,7 @@ const Send = () => {
   const { company } = useCompany();
 
   return (
+    
     <div
       className="flex justify-center flex-col 
     items-center gap-10"
@@ -32,7 +33,7 @@ const Send = () => {
         className={`text-xl sm:text-2xl font-bold
       ${mode === "light" ? "text-slate-700" : "text-white"}`}
       >
-       Envoyer de l&argent
+       Dashboard
       </div>
 
       <div

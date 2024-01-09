@@ -132,7 +132,7 @@ const Page = () => {
             </div>
 
             <div className="w-full flex justify-between items-center py-4 border-b">
-              <div>Solde du compte:</div>
+              <div>Account balance:</div>
               <div>
                 {currency}
                 {formatNumber(user.accountBalance)}
@@ -140,7 +140,7 @@ const Page = () => {
             </div>
 
             <div className="w-full flex justify-between items-center py-4 border-b">
-              <div>Solde retirable:</div>
+              <div>Withdrawable balance:</div>
               <div>
                 {currency}
                 {formatNumber(user.investWithdrawableBalance)}

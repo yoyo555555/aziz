@@ -50,7 +50,7 @@ const Navbar = () => {
         className={`cursor-pointer text-base sm:text-lg 
          select-none font-semibold`}
       >
-Aperçu </div>
+Preview </div>
 
       <div
         onMouseEnter={() => setInvestHover(true)}
@@ -65,8 +65,7 @@ Aperçu </div>
         className={`cursor-pointer text-base sm:text-lg 
          select-none font-semibold`}
       >
-      Gere votre pool wallet
-      </div>
+Pools      </div>
 
       {company?.loan.status === "on" && (
         <div

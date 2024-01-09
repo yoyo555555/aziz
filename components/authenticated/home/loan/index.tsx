@@ -84,7 +84,7 @@ const Loan = (props: LoanProps) => {
         value={searchInput}
         onChange={searchInputChangeHandler}
         icon={FaSearch}
-        placeholder="Rechercher une transaction"
+        placeholder="Search for a transaction"
       />
 
       <div className="flex flex-col w-full">

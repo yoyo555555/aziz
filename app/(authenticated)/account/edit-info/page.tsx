@@ -87,7 +87,7 @@ const Page = () => {
       >
         <div className="flex items-center gap-4 flex-col sm:flex-row">
           <div className="w-full">
-            <div>Nom Complet</div>
+            <div>Full Name</div>
             <TextInput
               value={input.fullname}
               onChange={(e) => setInput({ ...input, fullname: e.target.value })}

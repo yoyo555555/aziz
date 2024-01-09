@@ -118,7 +118,7 @@ const TransactionInfo = (props: TransactionInfoProp) => {
             {(transaction.pendingBalance ||
               transaction.pendingBalance === 0) && (
               <div className="w-full flex justify-between items-center py-4 border-b">
-                <div>Solde en attente:</div>
+                <div>Pending balance:</div>
                 <div>
                   {currency}
                   {formatNumber(transaction.pendingBalance)}

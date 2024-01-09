@@ -52,6 +52,7 @@ const PaymentCard = (props: PaymentCardProps) => {
               height={60}
               alt="logo"
               src={logo}
+              margin-top={-25}
             />
           )}
           {Icon && (

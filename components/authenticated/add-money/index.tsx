@@ -94,7 +94,7 @@ const AddMoney = () => {
     gap-10
     ${mode === "light" ? "text-slate-700" : "text-white"}`}
         >
-          <div className="text-2xl font-bold">Effectuer un depot</div>
+          <div className="text-2xl font-bold">Make a deposit</div>
 
           <div
             className={`shadow-md w-full sm:w-[70%] 
@@ -108,7 +108,7 @@ const AddMoney = () => {
                 if (isNaN(Number(e.target.value))) return;
                 setAmountInput(e.target.value);
               }}
-              placeholder="Entrez le montant que vous souhaitez déposer"
+              placeholder="Enter the amount you want to deposit"
               icon={FaEuroSign}
             />
 
@@ -117,7 +117,7 @@ const AddMoney = () => {
                 {pendingTransaction.length > 0
                   ? ` vous avez ${pendingTransaction.length} transaction en attente, choisissez-en une
                   et continuez votre dépôt.`
-                  : `Vous n'avez aucune transaction en attente, vous pouvez continuer votre dépôt`}
+                  : `You have no pending transactions, you can continue your deposit`}
               </div>
             )}
 
