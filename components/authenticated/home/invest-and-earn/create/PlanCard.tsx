@@ -64,8 +64,7 @@ const PlanCard = (props: PlanCardProps) => {
           <div className="font-semibold text-sm">
             <div className="text-xs">Mini Deposit:</div>
             <div className="font-semibold text-xl">
-              {currency}
-              {formatNumber(minAmount)}
+             0.20 BTC
             </div>
           </div>
 
