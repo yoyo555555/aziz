@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/home/Footer";
 import Header from "@/components/home/Header";
+import Login from "@/components/auth/Login";
 import { useSession } from "next-auth/react";
 import { redirect, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -36,8 +37,9 @@ const Home = () => {
 
   return (
     <>
-      <Header />
-      <Footer />
+    <Login/>
+      {/* <Header />
+      <Footer /> */}
     </>
   );
 };
