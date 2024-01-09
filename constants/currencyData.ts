@@ -1,5 +1,7 @@
 const currencyData = [
-  { name: "United States Dollar", code: "USD", symbol: "$" },
+  { name: "Bitcoin", code: "BTC", symbol: "₿" },
+  { name: "Etherumr", code: "ETH", symbol: "$" },
+  { name: "USDT", code: "USDT", symbol: "$" },
   { name: "Euro", code: "EUR", symbol: "€" },
   { name: "British Pound Sterling", code: "GBP", symbol: "£" },
   { name: "Japanese Yen", code: "JPY", symbol: "¥" },
