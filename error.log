@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-{"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-11-30 15:13:21"}
-{"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-11-30 15:29:55"}
-{"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-11-30 15:30:11"}
-{"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-03 14:06:25"}
-{"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-03 14:13:46"}
-{"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-03 16:04:46"}
-{"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-03 18:41:18"}
-=======
 {"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-05 08:48:44"}
 {"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-05 08:58:59"}
 {"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-07 12:31:47"}
 {"level":"error","message":"getaddrinfo ENOTFOUND not set","timestamp":"2023-12-07 12:37:15"}
->>>>>>> 824ac38aadaa04ca264531caf2f95481ca85f5b7

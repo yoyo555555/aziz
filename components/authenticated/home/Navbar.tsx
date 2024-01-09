@@ -47,10 +47,8 @@ const Navbar = () => {
           color: getColor(pathName === "/home", spendHover),
         }}
         onClick={() => router.push("/home")}
-        className={`cursor-pointer text-base sm:text-lg 
-         select-none font-semibold`}
-      >
-Preview </div>
+        className={`cursor-pointer text-base sm:text-lg select-none font-semibold`}>
+Previe </div>
 
       <div
         onMouseEnter={() => setInvestHover(true)}
