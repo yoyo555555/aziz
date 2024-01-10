@@ -120,7 +120,7 @@ const Navbar = () => {
           className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
         >
-          Crypto Graph </div>
+          Crypto</div>
 
         <div
           onMouseEnter={() => setCardHover(true)}
