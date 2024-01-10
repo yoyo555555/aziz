@@ -141,40 +141,11 @@ const Card = () => {
               <br />
               <span id="Ttexte"> contact@coinxsafe.com</span>
             </p>
-            <p
-              style={
-                {
-                  // fontSize: "1.25rem",
-                  // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-                  // fontWeight: 500,
-                  // lineHeight: 1.6,
-                  // letterSpacing: "0.0075em",
-                  // textAlign: "right",
-                  // color: "#1e409f",
-                }
-              }
-            >
-              <span id="Ttitre">
-                {" "}
-                <span id="Ttitrelogo">
-                  {" "}
-                  <FaPhone />
-                </span>
-                <span id="p">Téléphone</span>
-              </span>
-              <br />
-              <span id="Ttexte">01.42.36.47.98</span>
-            </p>
+ 
           </div>
-          <p
-            style={{
-              textAlign: "center", // Centrer le texte
-              lineHeight: "1.5", // Espace entre les lignes
-              color: "#1e409f", // Couleur de texte bleu foncé
-              fontFamily: "Calibri",
-              fontSize: "12pt", // Taille du texte
-            }}
-          ></p>
+      
+
+
         </div>
         {/* *** <div className={`flex flex-wrap items-center justify-center gap-2`}>
           {!loading && cards.length <= 0 && (
@@ -251,7 +222,12 @@ const Card = () => {
               color={mode === "light" ? primaryColor : primaryLightColor}
             />
           </div> */}
+          
+      
         </div>
+
+
+
       </div>
 
       <AddCardModal

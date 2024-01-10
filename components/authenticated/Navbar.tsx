@@ -66,9 +66,9 @@ const Navbar = () => {
           className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
         >
-          Dashboard
+          Dashboard </div>
           {/* <FaHome /> */}
-        </div>
+       
 
         {/* <div
           onMouseEnter={() => setMoneyHover(true)}
@@ -84,6 +84,43 @@ const Navbar = () => {
         >
           Envoyer de l&argent 
         </div> */}
+
+
+<div
+          onMouseEnter={() => setHomeHover(true)}
+          onMouseLeave={() => setHomeHover(false)}
+          style={{
+            color: getColor(pathName.startsWith("/home/invest-and-earn"), homeHover),
+          }}
+          onClick={() => router.push("/home/invest-and-earn")}
+          className={`flex cursor-pointer 
+        text-lg items-center gap-1 font-semibold`}
+        >
+          Pool </div>
+          
+<div
+          onMouseEnter={() => setHomeHover(true)}
+          onMouseLeave={() => setHomeHover(false)}
+          style={{
+            color: getColor(pathName.startsWith("/home/invest-and-earn"), homeHover),
+          }}
+          onClick={() => router.push("/home/invest-and-earn")}
+          className={`flex cursor-pointer 
+        text-lg items-center gap-1 font-semibold`}
+        >
+          Referrals </div>
+
+          <div
+          onMouseEnter={() => setHomeHover(true)}
+          onMouseLeave={() => setHomeHover(false)}
+          style={{
+            color: getColor(pathName.startsWith("/home/crypto-graph"), homeHover),
+          }}
+          onClick={() => router.push("/home/crypto-graph")}
+          className={`flex cursor-pointer 
+        text-lg items-center gap-1 font-semibold`}
+        >
+          Crypto Graph </div>
 
         <div
           onMouseEnter={() => setCardHover(true)}
@@ -113,7 +150,16 @@ const Navbar = () => {
             {/* <FaHome /> */}
           {/* </div>{" "} */}
         {/* </div> */} 
+      
+
       </div>
+
+
+
+
+     
+
+
 
       <div className="flex items-center gap-3">
         <ThemeToggle />

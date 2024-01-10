@@ -48,7 +48,7 @@ const Navbar = () => {
         }}
         onClick={() => router.push("/home")}
         className={`cursor-pointer text-base sm:text-lg select-none font-semibold`}>
-Previe </div>
+Preview </div>
 
       <div
         onMouseEnter={() => setInvestHover(true)}
