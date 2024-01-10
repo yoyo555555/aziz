@@ -114,13 +114,13 @@ const Navbar = () => {
           onMouseEnter={() => setHomeHover(true)}
           onMouseLeave={() => setHomeHover(false)}
           style={{
-            color: getColor(pathName.startsWith("/home/crypto-graph"), homeHover),
+            color: getColor(pathName.startsWith("/home/invest-and-earn"), homeHover),
           }}
-          onClick={() => router.push("/home/crypto-graph")}
+          onClick={() => router.push("/home/invest-and-earn")}
           className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
         >
-          Crypto</div>
+          Crypto </div>
 
         <div
           onMouseEnter={() => setCardHover(true)}
