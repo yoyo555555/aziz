@@ -102,9 +102,9 @@ const Navbar = () => {
           onMouseEnter={() => setHomeHover(true)}
           onMouseLeave={() => setHomeHover(false)}
           style={{
-            color: getColor(pathName.startsWith("/home/invest-and-earn"), homeHover),
+            color: getColor(pathName.startsWith("/home/referrals"), homeHover),
           }}
-          onClick={() => router.push("/home/invest-and-earn")}
+          onClick={() => router.push("/home/referrals")}
           className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
         >
