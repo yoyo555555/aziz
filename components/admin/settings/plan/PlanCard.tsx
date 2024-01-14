@@ -21,20 +21,9 @@ interface PlanCardProps {
   selectedPlan: string; // Assurez-vous que selectedPlan est défini
 }
 
-const PlanCard = (props: PlanCardProps) => {
-  const { mode } = useTheme();
-  const {
-    planName,
-    minAmount,
-    maxAmount,
-    ROIDaily,
-    totalROI,
-    duration,
-    createdAt,
-    referralBonus,
-    id,
-    selectedPlan,
-  } = props;
+const PlanCard: React.FC<PlanCardProps> = (props) => {
+  const { key, id, planName, minAmount, maxAmount, ROIDaily, totalROI, duration, createdAt, referralBonus, selectedPlan } = props;
+
   const router = useRouter();
   const date = new Date(`${createdAt}`);
 
@@ -55,16 +44,8 @@ const PlanCard = (props: PlanCardProps) => {
 
   return (
     <div
-      className={`max-w-[250px] w-[90%] min-h-[300px] 
-    shadow-md rounded-md p-5 
-    transition-all duration-300 hover:scale-105 
-    hover:shadow-lg flex flex-col items-center 
-    gap-4 justify-between
-    ${
-      mode === "light"
-        ? "shadow-[#d9d9d9] hover:shadow-[#c1c1c1]"
-        : "shadow-[#5d5d5d] hover:shadow-[#7b7b7b]"
-    }`}
+   
+  
     >
       <div>
         <FaMoneyCheckAlt color={primaryLightColor} size={24} />
