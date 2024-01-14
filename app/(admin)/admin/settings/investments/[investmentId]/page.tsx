@@ -12,7 +12,24 @@ import axios from "axios";
 import { useParams, useRouter } from "next/navigation";
 import React, { useCallback, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
-import PlanCard from "@/components/admin/settings/plan/PlanCard"; // Importer le composant PlanCard
+import PlanCard, {  } from "@/components/admin/settings/plan/PlanCard"; // Importer le composant PlanCard
+
+interface InvestmentProps {
+  // Ajoutez les propriétés spécifiques à InvestmentProps ici
+  planName: string;
+  amountInvested: number;
+  ROIDaily: number;
+  totalROI: number;
+  duration: number;
+  referralBonus: number;
+  createdAt: Date;
+  selectedPlan: string;
+  _id: string;
+}
+
+interface ReturnProps {
+  // Définissez les propriétés spécifiques à ReturnProps ici
+}
 
 const Page = () => {
   const { mode } = useTheme();
@@ -62,20 +79,18 @@ const Page = () => {
 
   return (
     <>
-    
-    <PlanCard
-  planName={investment.planName} // Utilisez le nom du plan comme nom de devise
-  minAmount={investment.amountInvested} // Utilisez le montant investi comme montant minimum
-  maxAmount={investment.amountInvested} // Utilisez le montant investi comme montant maximum
-  ROIDaily={investment.ROIDaily}
-  totalROI={investment.totalROI}
-  duration={investment.duration}
-  referralBonus={investment.referralBonus}
-  createdAt={investment.createdAt}
-  id={investment._id}
-  selectedPlan={investment.selectedPlan} // Ajoutez la propriété selectedPlan
-/>
-
+      <PlanCard
+        planName={investment.planName}
+        minAmount={investment.amountInvested}
+        maxAmount={investment.amountInvested}
+        ROIDaily={investment.ROIDaily}
+        totalROI={investment.totalROI}
+        duration={investment.duration}
+        referralBonus={investment.referralBonus}
+        createdAt={investment.createdAt}
+        id={investment._id}
+        selectedPlan={investment.selectedPlan}
+      />
 
       <div className={`flex justify-center pb-7`}>
         {/* Reste du code de votre page... */}
