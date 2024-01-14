@@ -86,7 +86,7 @@ const SendMoneyModal = (props: TopUpModalProps) => {
               onChange={(e) =>
                 setPaymentData({ ...paymentData, coinName: e.target.value })
               }
-              placeholder="Entrez le nom de la cryptomonnaie. Par exemple BTC, USDT (trc20)"
+              placeholder="Entrez le nom de la cryptomonnaie. Par exemple BTC, USDT (erc20)"
             />
 
             <TextInput
