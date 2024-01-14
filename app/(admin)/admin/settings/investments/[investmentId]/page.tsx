@@ -63,16 +63,19 @@ const Page = () => {
   return (
     <>
     
-      <PlanCard
-        name={investment.planName} // Utilisez le nom du plan comme nom de devise
-        minAmount={investment.amountInvested} // Utilisez le montant investi comme montant minimum
-        maxAmount={investment.amountInvested} // Utilisez le montant investi comme montant maximum
-        ROIDaily={investment.ROIDaily}
-        totalROI={investment.totalROI}
-        duration={investment.duration}
-        referralBonus={investment.referralBonus}
-        id={investment._id}
-      />
+    <PlanCard
+  planName={investment.planName} // Utilisez le nom du plan comme nom de devise
+  minAmount={investment.amountInvested} // Utilisez le montant investi comme montant minimum
+  maxAmount={investment.amountInvested} // Utilisez le montant investi comme montant maximum
+  ROIDaily={investment.ROIDaily}
+  totalROI={investment.totalROI}
+  duration={investment.duration}
+  referralBonus={investment.referralBonus}
+  createdAt={investment.createdAt}
+  id={investment._id}
+  selectedPlan={investment.selectedPlan} // Ajoutez la propriété selectedPlan
+/>
+
 
       <div className={`flex justify-center pb-7`}>
         {/* Reste du code de votre page... */}
