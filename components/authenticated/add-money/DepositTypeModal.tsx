@@ -36,7 +36,7 @@ const DepositTypeModal = (props: DepositTypeModalProps) => {
   return (
     <ModalContainer title="Deposit" opened={opened} onClose={onClose}>
       <div className="flex flex-col gap-3">
-        <Button
+        {/* <Button
           outline
           disabled={isAutoCoinDepositDisabled}
           loading={loading}
@@ -47,11 +47,11 @@ const DepositTypeModal = (props: DepositTypeModalProps) => {
             onClose();
             setSelectedDepositType("automatic-coin-payment");
           }}
-        />
+        /> */}
         <Button
           disabled={isManualCoinDepositDisabled}
           loading={loading}
-          label={`Manual Coin Payment ${
+          label={`Crypto deposit ${
             isManualCoinDepositDisabled ? "(not available)" : ""
           }`}
           onClick={() => {
@@ -60,7 +60,7 @@ const DepositTypeModal = (props: DepositTypeModalProps) => {
           }}
         />
 
-        <Button
+        {/* <Button
           disabled={isBankTransferDisabled}
           loading={loading}
           label={`Bank Transfer ${
@@ -70,7 +70,7 @@ const DepositTypeModal = (props: DepositTypeModalProps) => {
             onClose();
             setSelectedDepositType("bank-transfer");
           }}
-        />
+        /> */}
       </div>
     </ModalContainer>
   );
