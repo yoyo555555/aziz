@@ -12,8 +12,7 @@ import axios from "axios";
 import { useParams, useRouter } from "next/navigation";
 import React, { useCallback, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
-
-import PlanCard from "@/components/PlanCard"; // Importer le composant PlanCard
+import PlanCard from "@/components/admin/settings/plan/PlanCard"; // Importer le composant PlanCard
 
 const Page = () => {
   const { mode } = useTheme();
@@ -63,7 +62,7 @@ const Page = () => {
 
   return (
     <>
-      {/* Remplacez cette partie avec le composant PlanCard */}
+    
       <PlanCard
         name={investment.planName} // Utilisez le nom du plan comme nom de devise
         minAmount={investment.amountInvested} // Utilisez le montant investi comme montant minimum
