@@ -22,7 +22,7 @@ const Page = () => {
       setLoading(true);
       const { data } = await axios.get(`/api/plan`);
       if (data.error) throw new Error(data.error);
-      setPlans(data);
+      setPlans(data.reverse());
     } catch (error: any) {
       toast.error(error.message);
     } finally {
@@ -55,6 +55,7 @@ const Page = () => {
               duration={plan.duration}
               totalRoi={plan.totalROI}
               referralBonus={plan.referralBonus}
+              selectedPlan={plan.selectedPlan}
             />
           ))}
 

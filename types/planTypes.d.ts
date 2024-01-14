@@ -8,4 +8,5 @@ declare interface PlanProps {
   referralBonus: number;
   _id: string;
   createdAt: Date;
+  selectedPlan: string;
 }
