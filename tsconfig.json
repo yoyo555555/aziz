@@ -20,6 +20,7 @@
       }
     ],
     "paths": {
+      "node-fetch": ["./node_modules/node-fetch"],
       "@/*": ["./*"]
     },
     "typeRoots": ["./types/coingecko-coin-ticker-widget.d.ts", "./node_modules/@types"],
