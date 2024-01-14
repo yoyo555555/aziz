@@ -1,21 +1,16 @@
-"use client";
-
+// Importez les modules nécessaires
 import Button from "@/components/Button";
-import AddInvestmentBonusModal from "@/components/admin/settings/investment/AddInvestmentBonusModal";
-import DeleteInvestmentModal from "@/components/admin/settings/investment/DeleteInvestmentModal";
-import EditInvestmentModal from "@/components/admin/settings/investment/EditInvestmentModal";
 import useCompany from "@/components/hooks/useCompany";
 import useTheme from "@/components/hooks/useTheme";
-import formatDate from "@/constants/formatDate";
 import { Loader } from "@mantine/core";
 import axios from "axios";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import React, { useCallback, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
-import PlanCard, {  } from "@/components/admin/settings/plan/PlanCard"; // Importer le composant PlanCard
-
+import PlanCard from "@/components/admin/settings/plan/PlanCard"; // Importer le composant PlanCard
+import { useRouter } from "next/router";
+// Interface pour les propriétés d'investissement
 interface InvestmentProps {
-  // Ajoutez les propriétés spécifiques à InvestmentProps ici
   planName: string;
   amountInvested: number;
   ROIDaily: number;
@@ -27,15 +22,17 @@ interface InvestmentProps {
   _id: string;
 }
 
+// Interface pour les propriétés de rendement
 interface ReturnProps {
   // Définissez les propriétés spécifiques à ReturnProps ici
 }
 
+// Fonction principale de la page
 const Page = () => {
   const { mode } = useTheme();
   const [loading, setLoading] = useState(false);
   const investmentId = useParams().investmentId;
-
+  const router = useRouter();
   const [deleteModal, setDeleteModal] = useState(false);
   const [addBonusModal, setAddBonusModal] = useState(false);
 
@@ -43,12 +40,13 @@ const Page = () => {
     investment: InvestmentProps;
     returns: ReturnProps[];
   }>();
-  const router = useRouter();
+  
 
   const { company } = useCompany();
   const primaryLightColor = company?.color.primaryLight;
   const currency = company?.currency.symbol;
 
+  // Fonction pour obtenir les informations sur l'investissement
   const getInvestmentInfo = useCallback(async () => {
     try {
       setLoading(true);
@@ -62,10 +60,12 @@ const Page = () => {
     }
   }, [investmentId]);
 
+  // Effet pour obtenir les informations lors du montage du composant
   useEffect(() => {
     if (investmentId) getInvestmentInfo();
   }, [getInvestmentInfo, investmentId]);
 
+  // Si les informations sur l'investissement ne sont pas disponibles, affichez le chargeur
   if (!investmentInfo) {
     return (
       <div className="flex w-full justify-center">
@@ -74,9 +74,11 @@ const Page = () => {
     );
   }
 
+  // Obtenez les informations sur l'investissement et les rendements
   const { investment } = investmentInfo;
   const { returns } = investmentInfo;
 
+  // Rendu de la page
   return (
     <>
       <PlanCard
@@ -101,4 +103,5 @@ const Page = () => {
   );
 };
 
+// Exportez la fonction principale de la page
 export default Page;
