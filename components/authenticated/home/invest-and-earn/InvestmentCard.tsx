@@ -25,7 +25,16 @@ const InvestmentCard = (props: InvestmentCardCardProps) => {
   const router = useRouter();
   const date = new Date(`${createdAt}`);
 
-  const currency = company?.currency.symbol;
+  let currency = "";
+  if (name.toUpperCase() === "POOL ETH") {
+    currency = "ETH ";
+  } else if (name.toUpperCase() === "POOL BTC") {
+    currency = "BTC ";
+  } else if (name.toUpperCase() === "POOL USDT") {
+    currency = "USDT ";
+  } else {
+    currency = "DefaultCurrency"; // Définissez la devise par défaut si le plan n'est pas reconnu
+  }
 
   return (
     <>

@@ -15,17 +15,7 @@ const Card = () => {
     <section>
       <h1>Your Referrals</h1>
       <br />
-    {/* <TransactionCard title="Frank Pottier"
-          amount={50.0}
-          createdAt={new Date()}
-          senderName="John Doe"
-          id="1"
-          status="successful"
-          category="money-received"/>
-    <TransactionCard/>
-    <TransactionCard/>
-    <TransactionCard/>
-    <TransactionCard  />*/}
+    
  <ReferralInfo
   title="Frank Pottier"
   amount={50.0}

@@ -34,8 +34,8 @@ const Logo = (props: LogoProps) => {
               priority
               src={company?.logo?.url || ""}
               alt="logo"
-              width={91}
-              height={50}
+              width={96}
+              height={96}
               className="w-[100%] h-[100%]"
              margin-top={-25}
             />
