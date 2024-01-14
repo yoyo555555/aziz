@@ -8,16 +8,17 @@ import React from "react";
 import { FaMoneyCheckAlt } from "react-icons/fa";
 
 interface PlanCardProps {
+  key: string;
+  id: string;
   planName: string;
   minAmount: number;
   maxAmount: number;
   ROIDaily: number;
   totalROI: number;
   duration: number;
-  referralBonus: number;
   createdAt: Date;
-  id: string;
-  selectedPlan: string; // Nouvelle propriété pour spécifier le plan sélectionné
+  referralBonus: number;
+  selectedPlan: string; // Assurez-vous que selectedPlan est défini
 }
 
 const PlanCard = (props: PlanCardProps) => {
