@@ -4,6 +4,7 @@ import "./style.css"; // Chemin vers votre feuille de style CSS
 import { useRouter } from "next/navigation";
 import Button from "@/components/Button";
 
+
 const CoinGeckoWidget = () => {
   const router = useRouter();
   useEffect(() => {
