@@ -1,4 +1,4 @@
-// Importez les modules nécessaires
+"use client"
 import Button from "@/components/Button";
 import useCompany from "@/components/hooks/useCompany";
 import useTheme from "@/components/hooks/useTheme";
