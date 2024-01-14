@@ -74,7 +74,7 @@ const AddMoney = () => {
       (company && Number(amountInput) < company.desposit.minimum)
     ) {
       return toast.error(
-        `Le montant minimum à déposer est €${company?.desposit.minimum}`
+        `The minimum amount to deposit is $${company?.desposit.minimum}`
       );
     }
 

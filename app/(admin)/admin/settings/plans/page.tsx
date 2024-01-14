@@ -68,6 +68,7 @@ const Page = () => {
                 duration={item.duration}
                 createdAt={item.createdAt}
                 referralBonus={item.referralBonus}
+                selectedPlan={item.selectedPlan}
               />
             ))}
 

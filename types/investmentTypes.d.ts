@@ -4,7 +4,9 @@ declare interface InvestmentProps {
   ROIReceived: number;
   ROIDaily: number;
   totalROI: number;
+  referralBonus: number;
   duration: number;
+  selectedPlan: string;
   userId: string;
   _id: string;
   createdAt: Date;

@@ -91,11 +91,11 @@ const Save = (props: SaveProps) => {
       </div>
 
       <div className="flex gap-2">
-        <Button onClick={() => setWithdrawModal(true)} label={"withdraw"} />
+        <Button onClick={() => setWithdrawModal(true)} label={"Withdraw"} />
         <Button
           outline
           onClick={() => router.push("/home/invest-and-earn/create")}
-          label={"new investments"}
+          label={"New investments"}
         />
       </div>
 

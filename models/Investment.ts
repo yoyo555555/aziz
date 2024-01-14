@@ -6,7 +6,9 @@ interface InvestmentProps {
   ROIReceived: number;
   ROIDaily: number;
   totalROI: number;
+  referralBonus: number;
   duration: number;
+  selectedPlan: string;
   userId: string;
   status: "active" | "completed";
   _id: string;

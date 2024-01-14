@@ -31,7 +31,7 @@ const Navbar = () => {
 
   const [homeHover, setHomeHover] = useState(false);
   const [moneyHover, setMoneyHover] = useState(false);
-  const [cardHover, setCardHover] = useState(false);
+  const [walletHover, setWalletHover] = useState(false);
   const [accountHover, setAccountHover] = useState(false);
 
 
@@ -90,23 +90,10 @@ const Navbar = () => {
         >
           <MdDashboard />
           Dashboard </div>
-          {/* <FaHome /> */}
+   
        
 
-        {/* <div
-          onMouseEnter={() => setMoneyHover(true)}
-          onMouseLeave={() => setMoneyHover(false)}
-          style={{
-            color: getColor(pathName.startsWith("/send-money"), moneyHover),
-          }}
-          onClick={() => router.push("/send-money")}
-          className={`flex cursor-pointer 
-        text-lg items-center gap-1 font-semibold
-
-        `}
-        >
-          Envoyer de l&argent 
-        </div> */}
+    
 
 
 <div      
@@ -117,6 +104,7 @@ const Navbar = () => {
      <GiReceiveMoney />
           Pool </div>
           
+<<<<<<< HEAD
 <div
           onMouseEnter={() => setHomeHover(true)}
           onMouseLeave={() => setHomeHover(false)}
@@ -149,10 +137,23 @@ const Navbar = () => {
           // style={{
           //   color: getColor(pathName.startsWith("/card"), cardHover),
           // }}
+=======
+
+
+         
+
+        <div
+          onMouseEnter={() => setWalletHover(true)}
+          onMouseLeave={() => setWalletHover(false)}
+          style={{
+            color: getColor(pathName.startsWith("/card"), walletHover),
+          }}
+>>>>>>> 0fe0155a7c52bf766ab763b12ab0bab438679373
           onClick={() => router.push("/card")}
           className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
         >
+<<<<<<< HEAD
           <MdContactPhone />
           Contact
           {/* <FaCreditCard /> */}
@@ -172,7 +173,12 @@ const Navbar = () => {
             {/* <FaHome /> */}
           {/* </div>{" "} */}
         {/* </div> */} 
+=======
+          Wallet
+>>>>>>> 0fe0155a7c52bf766ab763b12ab0bab438679373
       
+        </div>
+        
 
       </div>
 
@@ -192,7 +198,7 @@ const Navbar = () => {
           className={`flex cursor-pointer
         text-lg items-center gap-1 font-semibold`}
         >
-          <span className="hidden sm:block">Acccount</span>
+          <span className="hidden sm:block">Account</span>
           <IoMdPerson size={22} />
         </div>
 

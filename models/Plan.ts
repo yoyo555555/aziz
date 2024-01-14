@@ -10,6 +10,7 @@ interface PlanProps {
   referralBonus: number;
   _id: string;
   createdAt: Date;
+  selectedPlan: string;
 }
 
 const planSchema = new Schema<PlanProps>(

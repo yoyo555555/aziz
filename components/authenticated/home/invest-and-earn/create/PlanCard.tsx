@@ -18,6 +18,7 @@ interface PlanCardProps {
   duration: number;
   totalRoi: number;
   referralBonus: number;
+  selectedPlan: string;
 }
 
 const PlanCard = (props: PlanCardProps) => {
@@ -31,6 +32,7 @@ const PlanCard = (props: PlanCardProps) => {
     totalRoi,
     duration,
     referralBonus,
+    selectedPlan,
   } = props;
   const router = useRouter();
   const [payModal, setPayModal] = useState(false);
