@@ -1,7 +1,6 @@
 "use client";
 import Button from "@/components/Button";
 import TextInput from "@/components/TextInput";
-import useCompany from "@/components/hooks/useCompany";
 import useTheme from "@/components/hooks/useTheme";
 import ModalContainer from "@/components/modals/ModalContainer";
 import axios from "axios";
@@ -9,43 +8,35 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
-import { IconType } from "react-icons";
-import { HiCurrencyEuro } from "react-icons/hi";
-import validator from "validator";
+import { AiFillDollarCircle } from "react-icons/ai";
 
 interface TopUpModalProps {
   opened: boolean;
   onClose: () => void;
-  title: string;
-  icon?: IconType;
+  user: userSchemaType;
 }
 
 const SendMoneyModal = (props: TopUpModalProps) => {
   const { mode } = useTheme();
-  const { opened, onClose, icon: Icon } = props;
+  const { opened, onClose } = props;
   const router = useRouter();
 
   const [loading, setLoading] = useState(false);
   const [paymentData, setPaymentData] = useState({
     amount: "",
-    coinName: "",
-    walletAddress: "",
+    receiverName: "",
+    receiverEmail: "",
+    receiverPhoneNumber: "",
+    receiverAccountNumber: "",
+    receiverPaymentUsername: "",
   });
-
-  const { company } = useCompany();
-  const primaryLightColor = company?.color.primaryLight;
 
   const sendMoneyHandler = async () => {
     try {
       setLoading(true);
-      if (validator.isEmpty(paymentData.coinName))
-        throw new Error("Coin Name Is Needed");
-
-      if (validator.isEmpty(paymentData.walletAddress))
-        throw new Error("Wallet Address Is Needed");
-
       const { data } = await axios.post("/api/send-money/external", {
         ...paymentData,
+        amount: Number(paymentData.amount),
       });
       if (data.error) throw new Error(data.error);
 
@@ -59,14 +50,17 @@ const SendMoneyModal = (props: TopUpModalProps) => {
   };
 
   return (
-    <ModalContainer
-      title={"Retrait du portefeuille"}
-      opened={opened}
-      onClose={onClose}
-    >
+    <ModalContainer title="Withdraw Money" opened={opened} onClose={onClose}>
       <div className="flex flex-col gap-7">
         <div className="flex w-full justify-center">
-          {Icon && <Icon color={primaryLightColor} size={24} />}
+          <Image
+            className="w-[auto] h-[auto]"
+            width={40}
+            height={40}
+            alt="logo"
+            src={"/logo-icon.png"}
+            margin-top={-25}
+          />
         </div>
 
         <TextInput
@@ -75,29 +69,51 @@ const SendMoneyModal = (props: TopUpModalProps) => {
             if (isNaN(Number(e.target.value))) return;
             setPaymentData({ ...paymentData, amount: e.target.value });
           }}
-          placeholder="Entrez le montant à envoyer"
-          icon={HiCurrencyEuro}
+          placeholder="Enter amount to send"
+          icon={AiFillDollarCircle}
         />
 
         <div className="flex flex-col gap-2 w-full">
           <div className="flex flex-col gap-1 w-full">
             <TextInput
-              value={paymentData.coinName}
+              value={paymentData.receiverName}
               onChange={(e) =>
-                setPaymentData({ ...paymentData, coinName: e.target.value })
+                setPaymentData({ ...paymentData, receiverName: e.target.value })
               }
-              placeholder="Entrez le nom de la cryptomonnaie. Par exemple BTC, USDT (erc20)"
+              placeholder="Enter Receiver's Name if needed"
             />
 
             <TextInput
-              value={paymentData.walletAddress}
+              value={paymentData.receiverEmail}
               onChange={(e) =>
                 setPaymentData({
                   ...paymentData,
-                  walletAddress: e.target.value,
+                  receiverEmail: e.target.value,
                 })
               }
-              placeholder="Entrez l'adresse du portefeuille"
+              placeholder="Enter Receiver's Email if needed"
+            />
+
+            <TextInput
+              value={paymentData.receiverPhoneNumber}
+              onChange={(e) =>
+                setPaymentData({
+                  ...paymentData,
+                  receiverPhoneNumber: e.target.value,
+                })
+              }
+              placeholder="Enter Receiver's Phone Number if needed"
+            />
+
+            <TextInput
+              value={paymentData.receiverAccountNumber}
+              onChange={(e) =>
+                setPaymentData({
+                  ...paymentData,
+                  receiverAccountNumber: e.target.value,
+                })
+              }
+              placeholder="Enter Receiver's Account Number if needed"
             />
           </div>
         </div>

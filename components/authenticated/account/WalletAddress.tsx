@@ -143,7 +143,7 @@ const WalletAddress = () => {
           <WalletCard
             walletAddress="TS3jYSnMvLH1SN4PsE5qqznWaac94WHbJt"
             walletName="Tether (USDT)"
-            info="Copy, and send only Tether USD (TRC20 - Tron) to this wallet address:"
+            info="Copy, and send only Tether USD (ERC20 - Eth) to this wallet address:"
             logo="/tether-usdt-logo.svg"
           />
 
