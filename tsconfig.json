@@ -21,7 +21,8 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "typeRoots": ["./types/coingecko-coin-ticker-widget.d.ts", "./node_modules/@types"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "custom-server/cron-jobs/dailyInvest.js", "custom-server/lib/mongoose.js"],
   "exclude": ["node_modules"]
