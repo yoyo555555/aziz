@@ -52,7 +52,7 @@ const TransactionCard = (props: TransactionCardProps) => {
     px-3 rounded-lg cursor-pointer  
     gap-3 active:scale-95 transition duration-300
     ${mode === "light" ? "" : ""} 
-    ${status === "action-needed" && "animate-bounce"}`}
+    ${status === "action-needed"}`}
     >
       <div className="flex items-center gap-4">
         <FaMoneyBillAlt

@@ -17,6 +17,7 @@ interface PlanCardProps {
   referralBonus: number;
   createdAt: Date;
   id: string;
+  selectedPlan: string; // Nouvelle propriété pour spécifier le plan sélectionné
 }
 
 const PlanCard = (props: PlanCardProps) => {
@@ -31,13 +32,25 @@ const PlanCard = (props: PlanCardProps) => {
     createdAt,
     referralBonus,
     id,
+    selectedPlan,
   } = props;
   const router = useRouter();
   const date = new Date(`${createdAt}`);
 
   const { company } = useCompany();
   const primaryLightColor = company?.color.primaryLight;
-  const currency = company?.currency.symbol;
+
+  // Utilisez la propriété selectedPlan pour déterminer la devise correspondante
+  let currency = "";
+  if (selectedPlan === "BTC") {
+    currency = "Bitcoin";
+  } else if (selectedPlan === "ETH") {
+    currency = "ETH";
+  } else if (selectedPlan === "USDT") {
+    currency = "USDT";
+  } else {
+    currency = "DefaultCurrency"; // Définissez la devise par défaut si le plan n'est pas reconnu
+  }
 
   return (
     <div

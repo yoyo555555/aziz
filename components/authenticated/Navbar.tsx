@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Logo from "../Logo";
 import { usePathname, useRouter } from "next/navigation";
-import { FaHome, FaCreditCard, FaPaperPlane } from "react-icons/fa";
 import { IoMdPerson, IoMdMenu } from "react-icons/io";
 import useMobileNavbar from "../hooks/useMobileNavbar";
 import useTheme from "../hooks/useTheme";
@@ -22,7 +21,7 @@ const Navbar = () => {
 
   const [homeHover, setHomeHover] = useState(false);
   const [moneyHover, setMoneyHover] = useState(false);
-  const [cardHover, setCardHover] = useState(false);
+  const [walletHover, setWalletHover] = useState(false);
   const [accountHover, setAccountHover] = useState(false);
 
   const getColor = (condition: boolean, hoverState: boolean) => {
@@ -67,23 +66,10 @@ const Navbar = () => {
         text-lg items-center gap-1 font-semibold`}
         >
           Dashboard </div>
-          {/* <FaHome /> */}
+   
        
 
-        {/* <div
-          onMouseEnter={() => setMoneyHover(true)}
-          onMouseLeave={() => setMoneyHover(false)}
-          style={{
-            color: getColor(pathName.startsWith("/send-money"), moneyHover),
-          }}
-          onClick={() => router.push("/send-money")}
-          className={`flex cursor-pointer 
-        text-lg items-center gap-1 font-semibold
-
-        `}
-        >
-          Envoyer de l&argent 
-        </div> */}
+    
 
 
 <div
@@ -98,59 +84,24 @@ const Navbar = () => {
         >
           Pool </div>
           
-<div
-          onMouseEnter={() => setHomeHover(true)}
-          onMouseLeave={() => setHomeHover(false)}
-          style={{
-            color: getColor(pathName.startsWith("/home/invest-and-earn"), homeHover),
-          }}
-          onClick={() => router.push("/home/invest-and-earn")}
-          className={`flex cursor-pointer 
-        text-lg items-center gap-1 font-semibold`}
-        >
-          Referrals </div>
 
-          <div
-          onMouseEnter={() => setHomeHover(true)}
-          onMouseLeave={() => setHomeHover(false)}
-          style={{
-            color: getColor(pathName.startsWith("/home/invest-and-earn"), homeHover),
-          }}
-          onClick={() => router.push("/home/invest-and-earn")}
-          className={`flex cursor-pointer 
-        text-lg items-center gap-1 font-semibold`}
-        >
-          Crypto </div>
+
+         
 
         <div
-          onMouseEnter={() => setCardHover(true)}
-          onMouseLeave={() => setCardHover(false)}
+          onMouseEnter={() => setWalletHover(true)}
+          onMouseLeave={() => setWalletHover(false)}
           style={{
-            color: getColor(pathName.startsWith("/card"), cardHover),
+            color: getColor(pathName.startsWith("/card"), walletHover),
           }}
           onClick={() => router.push("/card")}
           className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
         >
-          Contact
-          {/* <FaCreditCard /> */}
-        </div>
-        {/* <div className="sm:flex items-center gap-10 hidden"> */}
-          {/* <div
-            onMouseEnter={() => setHomeHover(true)}
-            onMouseLeave={() => setHomeHover(false)}
-            style={{
-              color: getColor(pathName.startsWith("/about"), homeHover),
-            }}
-            onClick={() => router.push("/about")}
-            className={`flex cursor-pointer 
-        text-lg items-center gap-1 font-semibold`}
-          >
-            A propos
-            {/* <FaHome /> */}
-          {/* </div>{" "} */}
-        {/* </div> */} 
+          Wallet
       
+        </div>
+        
 
       </div>
 
@@ -174,7 +125,7 @@ const Navbar = () => {
           className={`flex cursor-pointer
         text-lg items-center gap-1 font-semibold`}
         >
-          <span className="hidden sm:block">Acccount</span>
+          <span className="hidden sm:block">Account</span>
           <IoMdPerson size={22} />
         </div>
 
