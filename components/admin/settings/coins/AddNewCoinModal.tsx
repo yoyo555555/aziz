@@ -48,7 +48,7 @@ const AddNewCoinModal = (props: AddNewCoinModalProps) => {
           placeholder="Label (Bitcoin)"
           data={[
             { value: "Bitcoin (BTC)", label: "Bitcoin (BTC)" },
-            { value: "USDT (TRC20)", label: "USDT (TRC20)" },
+            { value: "USDT (ERC20)", label: "USDT (ERC20)" },
             { value: "Litcoin (LTC)", label: "Litcoin (LTC)" },
             { value: "Ripple (XRP)", label: "Ripple (XRP)" },
             { value: "Ethereum (ETH)", label: "Ethereum (ETH)" },
@@ -62,7 +62,7 @@ const AddNewCoinModal = (props: AddNewCoinModalProps) => {
           placeholder="Value (btc)"
           data={[
             { value: "btc", label: "btc" },
-            { value: "usdttrc20", label: "usdttrc20" },
+            { value: "usdterc20", label: "usdterc20" },
             { value: "ltc", label: "ltc" },
             { value: "xrp", label: "xrp" },
             { value: "eth", label: "eth" },

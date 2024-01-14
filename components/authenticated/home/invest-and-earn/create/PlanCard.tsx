@@ -35,9 +35,20 @@ const PlanCard = (props: PlanCardProps) => {
   const router = useRouter();
   const [payModal, setPayModal] = useState(false);
   const { company } = useCompany();
-  const currency = company?.currency.symbol;
   const primary = company?.color.primary;
   const primaryLight = company?.color.primaryLight;
+
+  // Utilisez la propriété name pour déterminer la devise correspondante
+  let currency = "";
+  if (name === "Pool BTC") {
+    currency = "Bitcoin";
+  } else if (name === "Pool ETH") {
+    currency = "ETH";
+  } else if (name === "Pool USDT") {
+    currency = "USDT";
+  } else {
+    currency = "DefaultCurrency"; // Définissez la devise par défaut si le plan n'est pas reconnu
+  }
 
   return (
     <>
@@ -64,15 +75,14 @@ const PlanCard = (props: PlanCardProps) => {
           <div className="font-semibold text-sm">
             <div className="text-xs">Mini Deposit:</div>
             <div className="font-semibold text-xl">
-             0.20 BTC
+              {currency} {formatNumber(minAmount)}
             </div>
           </div>
 
           <div className="font-semibold text-sm">
             <div className="text-xs">Max Deposit:</div>
             <div className="font-semibold text-xl">
-              {currency}
-              {formatNumber(maxAmount)}
+              {currency} {formatNumber(maxAmount)}
             </div>
           </div>
 
