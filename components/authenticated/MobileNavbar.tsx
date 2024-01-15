@@ -15,6 +15,12 @@ import { signOut } from "next-auth/react";
 import { toast } from "react-hot-toast";
 import useCompany from "../hooks/useCompany";
 
+import { MdDashboard } from "react-icons/md";
+import { GiReceiveMoney } from "react-icons/gi";
+import { BsPeopleFill } from "react-icons/bs";
+import { MdContactPhone } from "react-icons/md";
+
+
 const MobileNavbar = () => {
   const { isOpen, onClose } = useMobileNavbar();
   const { mode } = useTheme();
@@ -28,7 +34,8 @@ const MobileNavbar = () => {
   const primaryVeryLightColor = company?.color.primaryVeryLight;
 
   const [homeHover, setHomeHover] = useState(false);
-  const [moneyHover, setMoneyHover] = useState(false);
+  const [poolHover, setPoolHover] = useState(false);
+  const [referralsHover, setreferralsHover] = useState(false);
   const [cardHover, setCardHover] = useState(false);
 
   const getColor = (condition: boolean, hoverState: boolean) => {
@@ -112,29 +119,39 @@ const MobileNavbar = () => {
         text-lg items-center gap-1 font-semibold`}
                 >
                   Dashboard
-                  <FaHome />
+                  <MdDashboard />
                 </div>
-{/* 
-                <div
-                  onMouseEnter={() => setMoneyHover(true)}
-                  onMouseLeave={() => setMoneyHover(false)}
-                  style={{
-                    color: getColor(
-                      pathName.startsWith("/send-money"),
-                      moneyHover
-                    ),
-                  }}
-                  onClick={() => router.push("/send-money")}
-                  className={`flex cursor-pointer text-lg 
-                  items-center gap-1 font-semibold`}
-                >
-                Envoyer de l&argent 
-              
-                </div> */}
 
                 <div
-                  onMouseEnter={() => setCardHover(true)}
-                  onMouseLeave={() => setCardHover(false)}
+                  onMouseEnter={() => setPoolHover(true)}
+                  onMouseLeave={() => setPoolHover(false)}
+                  style={{
+                    color: getColor(pathName.startsWith("/home/invest-and-earn"), poolHover),
+                  }}
+                  onClick={() => router.push("/home/invest-and-earn")}
+                  className={`flex cursor-pointer text-lg items-center 
+                  gap-1 font-semibold`}
+                >
+                  Pool
+                  <GiReceiveMoney />
+                </div>
+                
+                <div
+                  onMouseEnter={() => setreferralsHover(true)}
+                  onMouseLeave={() => setreferralsHover(false)}
+                  style={{
+                    color: getColor(pathName.startsWith("/home/referrals"), referralsHover),
+                  }}
+                  onClick={() => router.push("/home/referrals")}
+                  className={`flex cursor-pointer text-lg items-center 
+                  gap-1 font-semibold`}
+                >
+                  Referrals
+                  <BsPeopleFill />
+                </div>
+
+                 <div
+            
                   style={{
                     color: getColor(pathName.startsWith("/card"), cardHover),
                   }}
@@ -143,8 +160,9 @@ const MobileNavbar = () => {
                   gap-1 font-semibold`}
                 >
                   Contact
-                  {/* <FaCreditCard /> */}
+                  <MdContactPhone />
                 </div>
+
               </div>
 
               <div

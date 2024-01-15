@@ -64,45 +64,15 @@
 }
 
 @media (max-width: 641px) { 
-    #logo {
-       display: none;
+    #navbar {
+        background-color: transparent;
+        height: auto;
     }
-    .text-white {
-        display: none !important;
+    #itemNav {
+        display: none;
     }
+
+
+    
 }
 
-@media (max-width: 630px) { 
-    .text-white {
-        display: none !important;
-    }
-    .text-lg {
-        font-size: 15px;
-    }
-    .gap-10 {
-        gap : 20px;
-    }
-}
-@media (max-width: 420px) { 
-    #navbar {
-        height: 10%;
-    }
-    .text-lg {
-        font-size: 12.5px;
-    }
-    .gap-10 {
-        gap : 15px;
-    }
-}
-
-@media (max-width: 350px) { 
-    #navbar {
-        height: 8.5%;
-    }
-    .text-lg {
-        font-size: 11px;
-    }
-    .gap-10 {
-        gap : 10px;
-    }
-}

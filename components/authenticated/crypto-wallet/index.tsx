@@ -1,26 +1,28 @@
 'use client'
-import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import React from 'react';
+
+// import GraphBtc from './graphBtc';
+// import GraphEth from './graphEth'
+// import GraphUsdt from './graphUsdt'
+// import ThreeCrypto from './threeCrypto'
+// import ConvertCrypto from './convertCrypto'
+
+
+
 
 
 const CoinTickerWidget = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://widgets.coingecko.com/coingecko-coin-ticker-widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <div>
-      <Helmet>
-        <script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js" async />
-      </Helmet>
-      <coingecko-coin-ticker-widget coin-id="bitcoin" currency="usd" locale="en"></coingecko-coin-ticker-widget>
+
+     {/* <GraphBtc/>
+     <GraphEth/>
+     <GraphUsdt/>
+     <ThreeCrypto/>
+     <ConvertCrypto/> */}
+
+    
     </div>
   );
 };
