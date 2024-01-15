@@ -5,7 +5,7 @@ import useCompany from "@/components/hooks/useCompany";
 import useTheme from "@/components/hooks/useTheme";
 import { Loader } from "@mantine/core";
 import axios from "axios";
-import { getServerSession } from "next-auth";
+
 import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";

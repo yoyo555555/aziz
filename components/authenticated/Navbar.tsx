@@ -6,7 +6,7 @@ import { IoMdPerson, IoMdMenu } from "react-icons/io";
 import useMobileNavbar from "../hooks/useMobileNavbar";
 import useTheme from "../hooks/useTheme";
 import ThemeToggle from "../ThemeToggle";
-import useCompany from "../hooks/useCompany";
+import useCompany from "../authenticated/referreal";
 
 import { MdDashboard } from "react-icons/md";
 import { GiReceiveMoney } from "react-icons/gi";
@@ -21,35 +21,14 @@ const Navbar = () => {
   const { onOpen } = useMobileNavbar();
   const { mode } = useTheme();
 
-  const { company } = useCompany();
-  const primaryColor = company?.color.primary;
-  const primaryLightColor = company?.color.primaryLight;
-  const primaryVeryLightColor = company?.color.primaryVeryLight;
+
 
   const [homeHover, setHomeHover] = useState(false);
   const [moneyHover, setMoneyHover] = useState(false);
   const [walletHover, setWalletHover] = useState(false);
   const [accountHover, setAccountHover] = useState(false);
 
-  const getColor = (condition: boolean, hoverState: boolean) => {
-    if (condition) {
-      if (mode === "light") {
-        return primaryColor;
-      } else {
-        return primaryLightColor;
-      }
-    } else {
-      if (hoverState) {
-        return primaryLightColor;
-      } else {
-        if (mode === "light") {
-          return "#334155";
-        } else {
-          return "white";
-        }
-      }
-    }
-  };
+
 
   return (
     <>
@@ -89,7 +68,13 @@ const Navbar = () => {
           <div
             onMouseEnter={() => setHomeHover(true)}
             onMouseLeave={() => setHomeHover(false)}
-            onClick={() => router.push("/home/referrals")}
+            onClick={() => {
+              console.log("Navigating to: /homeReferral");
+              console.log("Current path: " + pathName);
+              router.push("/referreal");
+              
+            }}
+            
             className={`flex cursor-pointer 
         text-lg items-center gap-1 font-semibold`}
           >
@@ -113,9 +98,7 @@ const Navbar = () => {
           <div
             onMouseEnter={() => setAccountHover(true)}
             onMouseLeave={() => setAccountHover(false)}
-            style={{
-              color: getColor(pathName.startsWith("/account"), accountHover),
-            }}
+           
             onClick={() => router.push("/account")}
             className={`flex cursor-pointer
         text-lg items-center gap-1 font-semibold`}

@@ -1,4 +1,4 @@
-import Card from "@/components/authenticated/crypto-wallet";
+import Card from "@/components/authenticated/card";
 import React from "react";
 
 const page = () => {

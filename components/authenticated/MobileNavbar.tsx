@@ -140,9 +140,9 @@ const MobileNavbar = () => {
                   onMouseEnter={() => setreferralsHover(true)}
                   onMouseLeave={() => setreferralsHover(false)}
                   style={{
-                    color: getColor(pathName.startsWith("/home/referrals"), referralsHover),
+                    color: getColor(pathName.startsWith("/homeReferral"), referralsHover),
                   }}
-                  onClick={() => router.push("/home/referrals")}
+                  onClick={() => router.push("/homeReferral")}
                   className={`flex cursor-pointer text-lg items-center 
                   gap-1 font-semibold`}
                 >

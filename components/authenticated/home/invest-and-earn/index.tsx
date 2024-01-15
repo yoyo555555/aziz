@@ -53,7 +53,7 @@ const Save = (props: SaveProps) => {
     ${mode === "light" ? "text-slate-700" : "text-white"}`}
     >
       <div className="flex flex-col sm:flex-row items-center gap-1 w-full justify-between px-3">
-        <div className="flex flex-col gap-1 w-full sm:items-center">
+        {/* <div className="flex flex-col gap-1 w-full sm:items-center">
           <div className={`text-xs font-medium`}>investment balance</div>
 
           <div
@@ -63,9 +63,9 @@ const Save = (props: SaveProps) => {
             {currency}
             {formatNumber(user.investBalance)}
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex flex-col gap-1 w-full sm:items-center">
+        {/* <div className="flex flex-col gap-1 w-full sm:items-center">
           <div className={`text-xs font-medium`}>Profit balance</div>
 
           <div
@@ -75,9 +75,9 @@ const Save = (props: SaveProps) => {
             {currency}
             {formatNumber(user.investProfitBalance)}
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex flex-col gap-1 w-full sm:items-center">
+        {/* <div className="flex flex-col gap-1 w-full sm:items-center">
           <div className={`text-xs font-medium`}>Balance to withdraw</div>
 
           <div
@@ -87,7 +87,7 @@ const Save = (props: SaveProps) => {
             {currency}
             {formatNumber(user.investWithdrawableBalance)}
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex gap-2">

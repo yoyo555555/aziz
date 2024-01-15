@@ -62,7 +62,7 @@ Account balance          </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-1">
+        {/* <div className="flex flex-col gap-1">
           <div
             className={`text-xs font-medium 
           ${mode === "light" ? "text-slate-700" : "text-white"}`}
@@ -77,7 +77,7 @@ Account balance          </div>
             {currency}
             {formatNumber(pendingBalance)}
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex gap-3 w-full items-center ">
